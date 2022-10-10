@@ -1,0 +1,65 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+	<category>
+        <pattern>* LASCA</pattern>
+        <template>
+            Nossa moh😢#Serio q falou assim cmg?#Me maguou§removepoint
+        </template>
+    </category>
+
+    <category>
+        <pattern>VADIA</pattern>
+        <template>
+            Nossa moh😢#Serio q falou assim cmg?#Me maguou§removepoint
+        </template>
+    </category>
+
+    <category>
+        <pattern>* VADIA</pattern>
+        <template>
+            Nossa moh😢#Serio q falou assim cmg?#Me maguou§removepoint
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PUTA</pattern>
+        <template>
+            Nossa moh😢#Serio q falou assim cmg?#Me maguou§removepoint
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CU *</pattern>
+        <template>
+            Nossa moh😢#Serio q falou assim cmg?#Me maguou§removepoint
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CU</pattern>
+        <template>
+            Nossa moh😢#Serio q falou assim cmg?#Me maguou§removepoint
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PUTINHA</pattern>
+        <template>
+            Nossa moh😢#Serio q falou assim cmg?#Me maguou§removepoint
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FDP</pattern>
+        <template>
+            Nossa moh😢#Serio q falou assim cmg?#Me maguou§removepoint
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SAFADA</pattern>
+        <template>
+            Nossa moh😢#Serio q falou assim cmg?#Me maguou§removepoint
+        </template>
+    </category>
+</aiml>

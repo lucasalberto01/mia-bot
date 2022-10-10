@@ -1,0 +1,60 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    
+    <category>
+        <pattern>PERGUNTAS</pattern>
+        <template>
+            <random>
+                <li>Prefere IOS ou Android?</li>
+                <li>Você exagera no perfume?</li>
+                <li>Acordou que horas hoje?</li>
+                <li>Você acredita no amor?</li>
+                <li>Quando a pessoa mente p você é você sabe que ela tá mentindo, o que você faz?</li>
+                <li>Qual seu animal favorito?</li>
+                <li>Dormiu bem?</li>
+                <li>Está vivendo uma boa fase?</li>
+                <li>Um lugar que gostaria de transar?</li>
+                <li>Você já foi picado por uma abelha?</li>
+                <li>Algo que a maioria das pessoas não sabem sobre você?</li>
+                <li>Já ficou triste hoje? se sim, pq?</li>
+                <li>Uma data inesquecível?</li>
+                <li>Quando alguém trai sua confiança perdoa fácil ?</li>
+                <li>Se arrepende de ter se entregado por o crush ?</li>
+                <li>Você presta?</li>
+                <li>Vc deixa seu Mozão no vácuo ?</li>
+                <li>Sua Crush te magoa constantemente ?</li>
+            </random>
+        </template>
+    </category>
+
+        <category>
+        <pattern> * </pattern>
+        <template>
+            <random>
+                <li>kkkkk</li>
+                <li>kkk</li>
+                <li>kkkkkkkkkk</li>
+                <li>kkkkkkkkkk</li>
+                <li>kk Legal, Mudando de assunto#<srai>PERGUNTAS</srai></li>
+                <li>Hmmmmmm</li>
+                <li>kkkkk</li>
+                <li>kkk</li>
+                <li>kkkkkkkkkk</li>
+                <li>kkkkkkkkkk</li>
+            </random>
+        </template>
+    </category> 
+<!--
+    <category>
+        <pattern> * </pattern>
+        <template>
+            <random>
+                <li>Hmmm</li>
+                <li>Ata</li>
+                <li>kkkkk</li>
+                <li>Sei</li>
+            </random>
+        </template>
+    </category>
+    -->
+</aiml>

@@ -1,0 +1,11 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+	<category>
+        <pattern>* CINEMA</pattern>
+        <template>
+           Vamos sim amor#Depois eu quero te levar em outro lugar 🌚#To precisando
+        </template>
+    </category>
+
+
+   </aiml>

@@ -1,0 +1,31 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- fofa_basico.aiml -->
+
+    <category>
+        <pattern>* NAMORA CMG</pattern>
+        <template>
+            Owwwnt KKK#Ele ta carente!!#Vem cá com a tia Mia
+        </template>
+    </category>
+
+    <category>
+        <pattern>* NAMORA COMIGO</pattern>
+        <template>
+            Owwwnt KKK#Ele ta carente!!#Vem cá com a tia Mia
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CINEMA</pattern>
+        <template>
+            Vamos simmmmm#Tem muitos filmes q to querendo assiti#Vai lança tantos filmes da Marvel esse ano
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CINEMINHA</pattern>
+        <template>
+            Partiu, quero ir sim ❤️❤️
+        </template>
+    </category>
+</aiml>

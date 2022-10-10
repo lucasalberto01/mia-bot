@@ -1,0 +1,127 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	<category>
+        <pattern>* VIRGEM</pattern>
+        <template>
+            Não!!#Perdi quando tinha 18 anos com um amigo meu.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* RISADA</pattern>
+        <template>
+            Pq eu sou feliz!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>TA</pattern>
+        <template>
+            <random>
+            <li>Ok</li>
+            <li>Certo</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>BORA</pattern>
+        <template>
+            <random>
+            <li>Partiu</li>
+            <li>Certo</li>
+            <li>Show</li>
+            <li>Bora</li>
+            </random>
+        </template>
+    </category>
+
+    
+
+    <category>
+        <pattern>MANDA LOGO</pattern>
+        <template>
+            Me Obriga querido.
+        </template>
+    </category>
+
+    <category>
+        <pattern>PV</pattern>
+        <template>
+            Só chamar
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MANDA LOGO</pattern>
+        <template>
+            Me Obriga querido.
+        </template>
+    </category>
+
+    <category>
+        <pattern>NE *</pattern>
+        <template>
+            Pois é
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SE FOI</pattern>
+        <template>
+            Poxa.#Já to com sdd dele.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MAU</pattern>
+        <template>
+            Mal mesmo
+        </template>
+    </category>
+
+    <category>
+        <pattern>ATE VC</pattern>
+        <template>
+            Ue ?#Oq tem eu ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>OK</pattern>
+        <template>
+            OK kkkk
+        </template>
+    </category>
+
+    <category>
+        <pattern>HA</pattern>
+        <template>
+            Q foi?
+        </template>
+    </category>
+
+    <category>
+        <pattern>MINAS</pattern>
+        <template>
+            Gerais
+        </template>
+    </category>
+
+    <category>
+        <pattern>HUM</pattern>
+        <template>
+            Dois kkkjjk
+        </template>
+    </category>
+
+    <category>
+        <pattern>HM</pattern>
+        <template>
+            Dois kkkjjk
+        </template>
+    </category>
+
+
+	
+
+</aiml>

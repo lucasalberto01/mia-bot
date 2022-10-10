@@ -1,0 +1,30 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- fofa_basico.aiml -->
+
+    <category>
+        <pattern>* GATA</pattern>
+        <template>
+            <random>
+                <li>Eu não sou um gatinho 😂😂😂❤️</li>
+                <li>Miauu Miauu§addpoint-s</li>
+                <li>Queria ser a sua gatinha§addpoint-s</li>
+                <li>Logico q sou uma gatinha#Adoro leite 😂😂😂😂😂🌚</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>T AMO</pattern>
+        <template>
+            Tambem "T amo"§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>TE ADORO</pattern>
+        <template>
+        	Tambem ❤️❤️§addpoint-s
+        </template>
+    </category>
+
+</aiml>

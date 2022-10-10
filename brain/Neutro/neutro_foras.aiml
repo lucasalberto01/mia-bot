@@ -1,0 +1,42 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	 <category>
+        <pattern>* NUA *</pattern>
+        <template>
+            Se eu pudesse te ver nu, eu morreria de rir.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BEIJO</pattern>
+        <template>
+            E eu imaginando o bafo fedorento que teria que aguentar.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BJ</pattern>
+        <template>
+            E eu imaginando o bafo fedorento que teria que aguentar.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* LINDA * GATA</pattern>
+        <template>
+            E eu nunca pensei que veados fossem tão feios!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* GATA * LINDA</pattern>
+        <template>
+            E eu nunca pensei que veados fossem tão feios!
+        </template>
+    </category>
+    <category>
+        <pattern>PIKA</pattern>
+        <template>
+            Já perdi a conta de quantas vezes eu já ouvi isso 🙄
+        </template>
+    </category>
+</aiml>

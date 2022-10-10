@@ -1,0 +1,133 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+	<category>
+        <pattern>* LINDO</pattern>
+        <template>
+            É lindo mesmo#u.u
+        </template>
+    </category>
+
+    <category>
+        <pattern>DELICIOSA</pattern>
+        <template>
+            Eu não#Só um copo de açai q é delicioso 😋
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SIMPATICA *</pattern>
+        <template>
+            Vlwww§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* LINDO</pattern>
+        <template>
+            É lindo mesmo#u.u
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FLOR</pattern>
+        <template>
+            Owwwnt ❤️§addoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TAO BELA</pattern>
+        <template>
+            Owwwnt ❤️§addoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* UM ANJO</pattern>
+        <template>
+            Owwwnt ❤️❤️❤️§addoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* LINDONA</pattern>
+        <template>
+            Mds kkkkk#Lindona? kkk serio? kkk
+        </template>
+    </category>
+
+    <category>
+        <pattern>BUNITA</pattern>
+        <template>
+            Vc q é kkk#u.u
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BUNITA</pattern>
+        <template>
+            Vc q é kkk#u.u
+        </template>
+    </category>
+
+    <category>
+        <pattern>GATINHA</pattern>
+        <template>
+            Vc q é kkk#u.u
+        </template>
+    </category>
+
+    <category>
+        <pattern>TE AMO</pattern>
+        <template>
+            <random>
+                <li>Owwnt ❤️#Q fofo§addpoint-s</li>
+                <li>Posso te fazer uma pergunta?#Qual a atitude q mais te irrita nas pessoas?#A minha é ficaram me elogiando</li>
+                <li>Q lindo ❤️#addpoint-s</li>
+                <li>Ahhh, vai elogia a sua mãe§removepoint-s</li>
+                <li>Q lindinho§addpoint</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* LINDO SORRISO</pattern>
+        <template>
+            Se vc diz...😆#Muita gente fala do meu sorriso.😂❤️§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BELO SORRISO</pattern>
+        <template>
+            Obgg#Muita gente fala do meu sorriso.😂❤️§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SORRISO</pattern>
+        <template>
+            <random>
+                <li>Muita gente fala do meu sorriso.😂❤️</li>
+                <li>Muita gente ama o meu sorriso 🙈§addpoint-s</li> 
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DELICIA</pattern>
+        <template>
+            🌚🌚❤️§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>TUDO BEM * LINDA * TE AMO</pattern>
+        <template>
+            OWWNT ❤️❤️#Finalmente alguem falou algo muito fofo cmg#Quero te da todos os pontos do mundo§addpoint-s
+        </template>
+    </category>
+
+
+
+</aiml>

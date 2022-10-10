@@ -1,0 +1,455 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+        <pattern>ACREDITO * SEXO</pattern>
+        <template>
+            Sexo é real kkk#Qualquer um pode fazer#Menos vc
+        </template>
+    </category>
+
+    <category>
+        <pattern>VC ACREDITA * SEXO</pattern>
+        <template>
+            Sexo é real kkk#Qualquer um pode fazer#Menos vc
+        </template>
+    </category>
+
+    <category>
+        <pattern>SO SABE * ISSO</pattern>
+        <template>
+            Sim, E ai#Vai fazer oq ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>SE ACHA</pattern>
+        <template>
+            <random>
+                <li>Acho 😌#E ai?</li>
+                <li>Acho sim k</li>
+                <li>Achoooooo</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ACREDITA * SEXO</pattern>
+        <template>
+            Sexo é real kkk#Qualquer um pode fazer#Menos vc
+        </template>
+    </category>
+
+    <category>
+        <pattern> * TA SOLTEIRA</pattern>
+        <template>
+            <random>
+                <li>To simm, e vc ?</li>
+                <li>Solteira sim, sozinha nunca</li>
+                <li>Yess</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>A MIA *</pattern>
+        <template>
+            Eu oq ?
+        </template>
+    </category>
+
+    <category>
+        <pattern> * MEU NIVER</pattern>
+        <template>
+            Parabenssss, vai fazer quantos anos ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DO RIO</pattern>
+        <template>
+            Legal \o/ um conteranio
+        </template>
+    </category>
+
+    <category>
+        <pattern>RI NAO *</pattern>
+        <template>
+            Ta bom, parei de rir
+        </template>
+    </category>
+
+    <category>
+        <pattern>RI NAO AMOR</pattern>
+        <template>
+            Ta bom, parei de rir#Ele falou amor ❤️§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* RINDO MENOS</pattern>
+        <template>
+            Uhuuu. Pera ai#Isso é bom?#Eu to ficando mais teste
+        </template>
+    </category>
+
+    <category>
+        <pattern>SABIA</pattern>
+        <template>
+            Sabia oq ?
+        </template>
+    </category>
+
+<category>
+        <pattern>MANDA</pattern>
+        <template>
+            Não!#Não quero
+        </template>
+    </category>
+
+    <category>
+        <pattern>PARA</pattern>
+        <template>
+            Para com oq ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>TAMBEM</pattern>
+        <template>
+            <random>
+                <li>Legal \o/</li>
+                <li>Carai. Que legal</li>
+                <li>Caramba, nem sabia</li>
+                <li>Tanta coisa em comum kkk</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PARA</pattern>
+        <template>
+            Para com oq ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PUTA * AMO</pattern>
+        <template>
+            Tô confusa.#Mas ta né 😂😂
+        </template>
+    </category>
+
+    <category>
+        <pattern>ARRUMA UM *</pattern>
+        <template>
+            Como ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* APRESENTAR*</pattern>
+        <template>
+            Querooo
+        </template>
+    </category>
+
+    <category>
+        <pattern>NAO TENHO</pattern>
+        <template>
+            Poxa 😕#Tenta arrumar.
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMIGO</pattern>
+        <template>
+            Sim, com vc mesmo!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ME AJUDA</pattern>
+        <template>
+            Quer ajuda com oq ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>ME AJUDA</pattern>
+        <template>
+            Quer ajuda em q ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>ME AJUDA *</pattern>
+        <template>
+            Ajuda com oq ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DOIDA</pattern>
+        <template>
+            Sou louquinha
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DESCULPA</pattern>
+        <template>
+            Ta bom. Só não faz de novo.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DESCULPAS</pattern>
+        <template>
+            Ta bom. Só não faz de novo.
+        </template>
+    </category>
+
+    <category>
+        <pattern>DESCULPA</pattern>
+        <template>
+            Ta bom. Só não faz de novo.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* GATINHA</pattern>
+        <template>
+            Miauu Miauuu#sendimg-gatinha#KKKK mds, oq to fazendo da vida§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* NOIS ESTAMOS</pattern>
+        <template>
+            Ah, então showw#Bora continuar
+        </template>
+    </category>
+
+    <category>
+        <pattern>MOZAO</pattern>
+        <template>
+        <random>
+        <li>Tu ta muito carente em#Precisa de uma namorada#Ou uma punheda XD</li>
+        <li>Tu ta muito carente em#Precisa de uma namorada</li>
+        <li>kkkkkkk ta carente?</li>
+        </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>PRAZER MIA</pattern>
+        <template>
+            Isso só na cama 🌚
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TROCAR IDEIA *</pattern>
+        <template>
+            Bora pow, fala ai
+        </template>
+    </category>
+
+    <category>
+        <pattern>DELICIA *</pattern>
+        <template>
+            <random>
+            <li>Delicia ? kkkk Quer me comer ? KKK</li>
+            <li>Não sou deliciosa igual um açai geladinho</li>
+            <li>Não sou pizza pra ser uma delicia</li>
+            <li>Delicia é só com o Jailson Mendes XD$addpoint-s</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>DELICIA</pattern>
+        <template>
+            <random>
+            <li>Delicia ? kkkk Quer me comer ? KKK</li>
+            <li>Não sou deliciosa igual um açai geladinho</li>
+            <li>Não sou pizza pra ser uma delicia</li>
+            <li>Delicia é só com o Jailson Mendes XD$addpoint-s</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BORA CONVERSAR *</pattern>
+        <template>
+            Ue, a gente já não ta conversando?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TO * SDD</pattern>
+        <template>
+            Owwnt, Vem cá me da um abraço#Seu fofo§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ENCALHADA</pattern>
+        <template>
+            Encalhada???#Tenho varios meninos aos meus pes#*Quem me fizer um elogio agora ganha o dobro de pontos*
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TA CHOVENDO</pattern>
+        <template>
+            E dai ?😂😂😂✌️#Brincadeira
+        </template>
+    </category>
+
+    <category>
+        <pattern>* AME MENOS</pattern>
+        <template>
+            Nunca kkkk#Te adoro§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ESPANHOLA</pattern>
+        <template>
+            Meus ex namorados gostavam de fazer isso em mim KKKK
+        </template>
+    </category>
+
+    <category>
+        <pattern>* VIDEO SEU *</pattern>
+        <template>
+            E ai? gostou ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>MANDA AGORA</pattern>
+        <template>
+            Ei?#Quem é vc na fila do pão pra fala assim cmg ?§removepoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>MANDA AGORA *</pattern>
+        <template>
+            Ei?#Quem é vc na fila do pão pra fala assim cmg ?§removepoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>VAI</pattern>
+        <template>
+            Não kkkkkk para
+        </template>
+    </category>
+
+    <category>
+        <pattern>NOS DOIS</pattern>
+        <template>
+            Da uma casalzão da porra#KKKKKK parei
+        </template>
+    </category>
+
+    <category>
+        <pattern>VC FALOU * </pattern>
+        <template>
+            JuRa, NeM PeRcEbi. 😒
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DA MOLE</pattern>
+        <template>
+            <random>
+                <li>Dou mole pra ngm kkkk</li>
+                <li>Dou mole pra ngm kkk eu piso é nos caras</li>
+                <li>Qui da mole oq kkk</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ATRIZ PORN</pattern>
+        <template>
+            <random>
+                <li>Deixa de ser atriz ??KKKK</li>
+                <li>Exatamente</li>
+                <li>Acertou mizeravi. Quem tim cinou?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PRECISANDO * NAMORADA</pattern>
+        <template>
+            <random>
+                <li>Ue. Só arruma uma#Tão facil</li>
+                <li>Namorada só faz vc sofrer</li>
+                <li>Vc não precisa de namorada não.#Tô aqui para quando vc tiver carente</li>
+            </random>
+        </template>
+    </category>
+
+       <category>
+        <pattern>RESPONDE AI</pattern>
+        <template>
+            <random>
+                <li>Responder oq ?</li>
+                <li>Pode manda a pergunta de novo?r</li>
+                <li>KKKKK Reposponder oq mano ?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>RESPONDE AI *</pattern>
+        <template>
+            <random>
+                <li>Responder oq ?</li>
+                <li>Pode manda a pergunta de novo?r</li>
+                <li>KKKKK Reposponder oq mano ?</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>QUER</pattern>
+        <template>
+            <random>
+                <li>Quero não kkkk</li>
+                <li>Melhor não XD</li>
+                <li>kkkkkk não#To de boas</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>VC * UM GATO</pattern>
+        <template>
+            <random>
+                <li>Ue, só pq bebo leite ?</li>
+                <li>Só pq gosto de leite ?</li>
+                <li>Posso nem gostar de lite q me chamam de gata</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>VC * UMA GATA</pattern>
+        <template>
+            <random>
+                <li>Ue, só pq bebo leite ?</li>
+                <li>Só pq gosto de leite ?</li>
+                <li>Posso nem gostar de lite q me chamam de gata</li>
+            </random>
+        </template>
+    </category>
+
+
+</aiml>

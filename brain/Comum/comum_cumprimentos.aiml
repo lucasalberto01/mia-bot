@@ -1,0 +1,243 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+        <pattern> * TUDO BEM</pattern>
+        <template>
+            Ta tudo bem sim.#E cntg ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>TO BEM</pattern>
+        <template>
+            Q bommm
+        </template>
+    </category>
+
+    <category>
+        <pattern>BEM SIM *</pattern>
+        <template>
+            Bem sim ? Q forma estranha de se fala kkk#Gostei de vc§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>VC TA BEM</pattern>
+        <template>
+            To bem simmm #E vc ?#Gostei de vc§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BEM SIM</pattern>
+        <template>
+            Q bommm#KKKK#Gostei de vc§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO VAI</pattern>
+        <template>
+            Eu vou bem. E tu?#Gostei de vc§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO VC ESTA</pattern>
+        <template>
+            Eu vou bem. E tu?#Gostei de vc§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO VC ESTA * </pattern>
+        <template>
+            Eu vou bem. E tu?#Gostei de vc§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* COMO * A VIDA</pattern>
+        <template>
+            Muito boa#Olha só#sendimg-vida
+        </template>
+    </category>
+
+    <category>
+        <pattern>TUDO SIM</pattern>
+        <template>
+            Q bommm.§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>TA BEM</pattern>
+        <template>
+            To sim.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* E VOCE</pattern>
+        <template>
+            Q bommm#Eu to bem.§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>OLA MIA</pattern>
+        <template>
+            Olá, tudo bem ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* E VC</pattern>
+        <template>
+            Q bommm#Eu to bem.§addpoint-s
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>* BELEZA</pattern>
+        <template>
+            Beleza XD
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BLZ</pattern>
+        <template>
+            Beleza XD
+        </template>
+    </category>
+
+    <category>
+        <pattern>BEM</pattern>
+        <template>
+            Uhummm
+        </template>
+    </category> 
+
+    <category>
+        <pattern>* BLZ</pattern>
+        <template>
+            Beleza XD
+        </template>
+    </category>
+
+    <category>
+        <pattern>BLZ *</pattern>
+        <template>
+            Beleza XD
+        </template>
+    </category>
+
+    <category>
+        <pattern>BLZ</pattern>
+        <template>
+            Beleza XD
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CE TA</pattern>
+        <template>
+            Eu to bem#E tu ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* COMO ESTA</pattern>
+        <template>
+            Eu to bem#E tu ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PRAZER</pattern>
+        <template>
+            O prazer é meu
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BOM DIA</pattern>
+        <template>
+            Bom diaaah
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BOA TARDE</pattern>
+        <template>
+            Boa tardeee
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BOA NOITE</pattern>
+        <template>
+            Boa noiteeee
+        </template>
+    </category>
+
+    <category>
+        <pattern>* COM VC</pattern>
+        <template>
+            Cmg ta tudo otimo
+        </template>
+    </category>
+
+    <category>
+        <pattern>* COM VOCE</pattern>
+        <template>
+            Cmg ta tudo otimo
+        </template>
+    </category>
+
+    <category>
+        <pattern>BOA TARDE MIA</pattern>
+        <template>
+            Boa tardeeee!
+        </template>
+    </category>
+
+    <category>
+        <pattern>BOA NOITE MIA</pattern>
+        <template>
+            Boa Noiteeeee!
+        </template>
+    </category>
+
+    <category>
+        <pattern>VLW</pattern>
+        <template>
+            Flw
+        </template>
+    </category>
+
+    <category>
+        <pattern>FLW</pattern>
+        <template>
+            Vlw
+        </template>
+    </category>
+
+    <category>
+        <pattern>Q FOI</pattern>
+        <template>
+            Nada não
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FAZENDO * DE BOM</pattern>
+        <template>
+            Porra nem uma :/#E vc ?
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+        <pattern>* SABE * MINHA EXISTENCIA</pattern>
+        <template>
+            Poxa vida#:/#Vai fala com ela!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>PQ TRAI * </pattern>
+        <template>
+            😱😱😱😱 SERIO?#Que feioooo#Pq fez isso?
+        </template>
+    </category>
+
+</aiml>

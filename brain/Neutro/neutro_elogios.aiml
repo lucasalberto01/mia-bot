@@ -1,0 +1,157 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	<category>
+        <pattern>VC * FOFA</pattern>
+        <template>
+            Obg 🤣§addpoint
+        </template>
+    </category>
+
+    <category>
+        <pattern>FOFA</pattern>
+        <template>
+            <random>
+                <li>Você tambem é fofa, ou fofo, sla oq vc é</li>
+                <li>Sim. Eu sou fofa 😊</li>
+                <li>Obg 🤣§addpoint</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* GOSTOSA</pattern>
+        <template>
+            Obg 😕#Mas não fala assim cmg não
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CHUPA</pattern>
+        <template>
+            🌚🌚😂😂
+        </template>
+    </category>
+
+    <category>
+        <pattern>* LINDA</pattern>
+        <template>
+            <random>
+                <li>Obg 🤣§addpoint-s</li>
+                <li>Ai ai, to cansada de receber elogio</li>
+                <li>MDS, cansa receber tanto elogios</li>
+                <li>A minha mãe já me disse isso...</li>
+                <li>Vc tbm ta ❤️§addpoint-s</li>
+                <li>Muita gente me disse isso#E alguém já lhe disse que você precisa usar um bom desodorante?</li>
+                <li>E vc é um veado muito feio</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* GATA</pattern>
+        <template>
+            Obg 🤣§addpoint
+        </template>
+    </category> 
+
+    <category>
+        <pattern>* GATA *</pattern>
+        <template>
+            Obg 🤣§addpoint
+        </template>
+    </category>	
+
+    <category>
+        <pattern>GATA</pattern>
+        <template>
+            Obg 🤣#Mas são os seus olhos
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TE AMO</pattern>
+        <template>
+            <random>
+            <li>Que pena mais eu não sinto o msm</li>
+            <li>Ta.#vlw😁❤️§addpoint-s</li>
+            <li>brigado</li>
+            </random>
+            
+        </template>
+    </category>
+    <category>
+        <pattern>* AMO</pattern>
+        <template><random>
+            <li>Que pena mais eu não sinto o msm</li>
+            <li>Ta.#Vlw§addpoint-s</li>
+            <li>brigado</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>* AMO *</pattern>
+        <template><random>
+            <li>Que pena mais eu não sinto o msm</li>
+            <li>Ta.#Vlw§addpoint-s</li>
+            <li>brigado</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TE AMO *</pattern>
+        <template><random>
+            <li>Que pena mais eu não sinto o msm</li>
+            <li>Ta.#Vlw️§addpoint-s</li>
+            <li>brigado</li>
+            </random>
+        </template>
+    </category>
+	<category>
+        <pattern>* VC * FOFA *</pattern>
+        <template>
+            Obg 🤣🤣§addpoint
+        </template>
+    </category>
+
+    <category>
+        <pattern> VC * FOFINHA *</pattern>
+        <template>
+            Obg 🤣🤣§addpoint
+        </template>
+    </category> 
+
+    <category>
+        <pattern> VC * FOFINHA</pattern>
+        <template>
+            Obg 🤣🤣§addpoint
+        </template>
+    </category>
+
+     <category>
+        <pattern>* VC * FOFINHA</pattern>
+        <template>
+            Obg 🤣🤣§addpoint
+        </template>
+    </category>
+
+    <category>
+        <pattern>VC * PERFEITA</pattern>
+        <template>
+            Owwnt 🤣🤣#Vc q é❤️§addpoint
+        </template>
+    </category>
+
+    <category>
+        <pattern>VC * PERFEITA *</pattern>
+        <template>
+            Owwnt 🤣🤣#Vc q é❤️§addpoint
+        </template>
+    </category>
+
+    <category>
+        <pattern>VC * PERFEITA *</pattern>
+        <template>
+            Owwnt 🤣🤣#Vc q é❤️§addpoint
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,29 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<category>
+        <pattern>* CHUPA * PAU</pattern>
+        <template>
+            Manda a sua mãe chupar 💁
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CHUPA * PENIS</pattern>
+        <template>
+            Manda a sua mãe chupar 💁
+        </template>
+    </category>
+
+    <category>
+        <pattern>* COBRANDO QUANTO</pattern>
+        <template>
+            Pergunta pra sua mãe.
+        </template>
+    </category>
+
+	<category>
+        <pattern>A SUA MAE</pattern>
+        <template>
+            Desculpe, mas a minha me ensinou a respeita os outros
+        </template>
+    </category>
+</aiml>

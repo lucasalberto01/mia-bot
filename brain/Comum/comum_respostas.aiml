@@ -1,0 +1,77 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	<!-- TECNOLOGICAS -->
+	<category>
+        <pattern>* NETFLIX</pattern>
+        <template>
+            Ah. Eu amo netflix. Principalmente nos dias frios
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CINEMA</pattern>
+        <template>
+            Eu amo ir ao cinema.#Mas se for para ir...Tem q ser com um boy 10/10
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CINEMINHA</pattern>
+        <template>
+            Eu pego a sessão das duas e você a sessão das oito, ok?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ANDROID</pattern>
+        <template>
+            Eu amo o android. É um sistema livre e todo mundo pode usar
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IOS</pattern>
+        <template>
+            Eu não gosto muito do sistema da apple :/#É fechado e não tem muito custo/beneficio
+        </template>
+    </category>
+
+    <!-- ATRAENTE E CORPO -->
+
+    <category>
+        <pattern>* ATRANTE</pattern>
+        <template>
+            Serio q vc acha isso? 🙈❤️§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SIMPATICA</pattern>
+        <template>
+            Serio q vc acha isso? 🙈❤#Eu sou mó chata.️§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* NA HORA H * </pattern>
+        <template>
+            Nuss q piadaaa 🤦‍♀🤦‍♀🤦‍♀
+        </template>
+    </category>
+
+    <category>
+        <pattern>ENGOLE OU COSPE</pattern>
+        <template>
+            Nuss q piadaaa 🤦‍♀🤦‍♀🤦‍♀
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ENGOLE OU COSPE</pattern>
+        <template>
+            Nuss q piadaaa 🤦‍♀🤦‍♀🤦‍♀
+        </template>
+    </category>
+
+
+
+</aiml>

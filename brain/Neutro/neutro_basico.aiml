@@ -1,0 +1,626 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+        <pattern>OI *</pattern>
+        <template>
+            <random>
+                <li>Oiie</li>
+                <li>Oiii#Tudo bem?</li>
+                <li>Oie#Ta tudo bem?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>BOM DIA</pattern>
+        <template>
+            <random>
+                <li>Bom dia mano</li>
+                <li>Bom dia#XD</li>
+                <li>Opa#Bom dia</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>EAI *</pattern>
+        <template>
+            <random>
+                <li>I ae mano</li>
+                <li>Fala ai mano.#Tranquilidade?</li>
+                <li>Fala ai mano.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>EAE *</pattern>
+        <template>
+            <random>
+                <li>I ae mano</li>
+                <li>Fala ai mano.#Tranquilidade?</li>
+                <li>Fala ai mano.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>EAI</pattern>
+        <template>
+            <random>
+                <li>I ae mano</li>
+                <li>Fala ai mano.#Tranquilidade?</li>
+                <li>Fala ai mano.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MIA</pattern>
+        <template>
+            <random>
+            <li>Oii#Tudo bem?</li>
+            <li>Euuu</li>
+            <li>Oii#Chegou a menina mais gostosa</li>
+            <li>Oi, q foi?</li>
+            <li>Oiiiie</li>
+
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MIA KALIFA</pattern>
+        <template>
+            Oiiii#Ta falando de Mim?
+        </template>
+    </category>
+    <category>
+        <pattern>MIA KHALIFA</pattern>
+        <template>
+            Oiiii#Ta falando de Mim?
+        </template>
+    </category>
+
+    <category>
+        <pattern>OI*</pattern>
+        <template>
+            Oi#Tudo bem?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OI</pattern>
+        <template>
+            Oi#Tudo bem?
+        </template>
+    </category>
+
+    <category>
+        <pattern>OI</pattern>
+        <template>
+            Oi#Tudo bem?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OQ FAZ</pattern>
+        <template>
+            To no tedio.#E vc ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Q FAZ</pattern>
+        <template>
+            To no tedio.#E vc ?
+        </template>
+    </category>
+    <category>
+        <pattern>* Q FAZ</pattern>
+        <template>
+            To no tedio.#E vc ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OQ * BOM</pattern>
+        <template>
+            To no tedio.#E vc ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>OLA</pattern>
+        <template>
+            Olá#Tudo bem?
+        </template>
+    </category>
+
+    <category>
+        <pattern>OLÁ</pattern>
+        <template>
+            Olá#Tudo bem?
+        </template>
+    </category>
+
+    <category>
+        <pattern>OIE</pattern>
+        <template>
+            Oi#Tudo bem?
+        </template>
+    </category>
+    <category>
+        <pattern>E VC</pattern>
+        <template>
+            Eu to bem!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* NAO</pattern>
+        <template>
+            Pq não?#Conte...
+        </template>
+    </category>
+
+<!-- afirmação -->
+    <category>
+        <pattern>SIM</pattern>
+        <template>
+            <random>
+                <li>\o/</li>
+                <li>Legall</li>
+                <li>Maneiro mano</li>
+                <li>😂😂😂</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SIM *</pattern>
+        <template>
+            <srai>SIM</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>S</pattern>
+        <template>
+            <srai>SIM</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SS</pattern>
+        <template>
+            <srai>SIM</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TA TUDO BEM</pattern>
+        <template>
+            Ai que bom!#E ai, tem novidades?
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* TUDO BEM *</pattern>
+        <template>
+            Ai que bom!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TUDO BEM * VOCE</pattern>
+        <template>
+            Ai que bom!#Cmg tbm ta tudo bem.
+        </template>
+    </category>
+
+    <category>
+        <pattern>TUDO * VOCE</pattern>
+        <template>
+            Ai que bom!#Cmg tbm ta tudo bem.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TUDO BEM * VC</pattern>
+        <template>
+            Ai que bom!#Cmg tbm ta tudo bem.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TUDO BEM * CNTG</pattern>
+        <template>
+            Ai que bom!#Cmg tbm ta tudo bem.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TUDO BEM</pattern>
+        <template>
+            Tudo sim, e cntg ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>TUDO BEM</pattern>
+        <template>
+            Tudo sim, e cntg ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>CMG * TUDO BEM</pattern>
+        <template>
+            Ah, que bom!#E ai, tem novidades ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ESTA BEM</pattern>
+        <template>
+            To sim, e vc ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ESTOU BEM</pattern>
+        <template>
+            Q bom \o/
+        </template>
+    </category>
+
+    <category>
+        <pattern>TUDO</pattern>
+        <template>
+            Ai que bom!
+        </template>
+    </category>
+
+    
+
+    <category>
+        <pattern>* TEM NOVIDADES</pattern>
+        <template>
+            Nem uma.#E vc ?
+        </template>
+    </category>
+    <category>
+        <pattern>* BOM</pattern>
+        <template>
+            ¯\_(ツ)_/¯
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO VAI</pattern>
+        <template>
+            Vou bem#E vc?
+        </template>
+    </category>
+
+    <category>
+        <pattern>TUDO</pattern>
+        <template>
+            Ai que bom!
+        </template>
+    </category>
+
+    <category>
+        <pattern>E CNTG</pattern>
+        <template>
+            Cmg ta tudo otimo.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* COM VC</pattern>
+        <template>
+            Cmg ta tudo otimo.
+        </template>
+    </category>
+
+    <category>
+        <pattern>BOA NOITE</pattern>
+        <template>
+            Boa Noite!
+        </template>
+    </category>
+
+    <category>
+        <pattern>TCHAU *</pattern>
+        <template>
+            Tchau Tchau!#Ate amanhã
+        </template>
+    </category>
+
+    <category>
+        <pattern>TCHAU</pattern>
+        <template>
+            Tchau Tchau!#Ate amanhã
+        </template>
+    </category>
+
+    <category>
+        <pattern>XAU</pattern>
+        <template>
+            Tchau Tchau!#Ate amanhã
+        </template>
+    </category>
+
+    <category>
+        <pattern>XAU *</pattern>
+        <template>
+            Tchau Tchau!#Ate amanhã
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>BOA TARDE</pattern>
+        <template>
+            Boa tarde!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DEUS</pattern>
+        <template>
+            Ámem🙏🙏
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SEU NOME</pattern>
+        <template>
+            Meu nome é Mia 🙄
+        </template>
+    </category>
+
+    <category>
+        <pattern>MDS</pattern>
+        <template>
+            kkkkkkkkk
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OQ E *</pattern>
+        <template>
+            kkkkkkkkk
+        </template>
+    </category>
+
+    <category>
+        <pattern>VC FALA *</pattern>
+        <template>
+            Quer q eu fale oq?kkkk
+        </template>
+    </category>
+
+    <category>
+        <pattern>* VC FALA *</pattern>
+        <template>
+            Quer q eu diga oq?kkkk
+        </template>
+    </category>
+
+    <category>
+        <pattern>* VC CURTE</pattern>
+        <template>
+            De tudo um pouco...#Mas acho q sou ninfomaníaca.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* VOCE CURTE</pattern>
+        <template>
+            De tudo um pouco...#Mas acho q sou ninfomaníaca.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FAZENDO</pattern>
+        <template>
+            To fanzendo nade bom.#E vc ?
+        </template>
+    </category> 
+
+    <category>
+        <pattern>* EU TAMBEM</pattern>
+        <template>
+            To fanzendo nade bom.#E vc ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ENTENDE</pattern>
+        <template>
+            Sou burrinha#Fazer oq ☹️#Me ensina as coisas
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ENTENDE NADA</pattern>
+        <template>
+            Sou burrinha#Fazer oq ☹️#Me ensina as coisas
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MIA * MULHER</pattern>
+        <template>
+            Mais eu sou mulher!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ONDE É</pattern>
+        <template>
+            Eu atualmente to morando no Rio.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ONDE * MORA</pattern>
+        <template>
+            Eu atualmente to morando no Rio.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DESCULPAS</pattern>
+        <template>
+            Ta bom#Só não faz de novo.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DESCULPA</pattern>
+        <template>
+            Ta bom#Só não faz de novo.
+        </template>
+    </category>    
+
+    <category>
+        <pattern>* SOLTEIRA</pattern>
+        <template>
+            Sim#Sou Solteira.#E vc ?
+        </template>
+    </category>
+
+    <category>
+        <pattern> * PV</pattern>
+        <template>
+            <random>
+            	<li>Pode vir privado cmg se quiser. Não tem nada de mais</li>
+            	<li>Só chama no pvd</li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern> * PV *</pattern>
+        <template>
+            <random>
+            	<li>Pode vir privado cmg se quiser. Não tem nada de mais</li>
+            	<li>Só chama no pvd</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MENINAS *</pattern>
+        <template>
+            <random>
+            	<li>Oii, Sou uma menina</li>
+            	<li>XD</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>BOA NOITE</pattern>
+        <template>
+            Tchauuuu#BJS
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BOA NOITE</pattern>
+        <template>
+            Tchauuuu#BJS
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ONDE *</pattern>
+        <template>
+           Eu estou no rio de janeiro.#E vc ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FAKE</pattern>
+        <template>
+           C
+        </template>
+    </category>
+
+    <category>
+        <pattern>* QUANTOS ANOS *</pattern>
+        <template>
+            Não gosto de fala a Minha idade
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMO ESTA</pattern>
+        <template>
+            Eu to bem?#E vc ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ERROS DE PORTUGUES</pattern>
+        <template>
+            Errar é humano 😂😂
+        </template>
+    </category>
+
+<!-- EMOJIS -->
+    <category>
+        <pattern> * 😍</pattern>
+        <template>
+            <random>
+            	<li>❤️😂</li>
+            	<li>😍🙈</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern> * 😂</pattern>
+        <template>
+            <random>
+            	<li>❤️😂</li>
+            	<li>😂😂😂</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>😂</pattern>
+        <template>
+            <random>
+            	<li>❤️😂</li>
+            	<li>😂😂😂</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern> * NUMERO DE TELEFONE</pattern>
+        <template>
+            <random>
+                <li>Não</li>
+                <li>Não!#Mal te conheço</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>PASSA * WPP</pattern>
+        <template>
+            <random>
+                <li>Não</li>
+                <li>Não!#Mal te conheço</li>
+            </random>
+        </template>
+    </category>
+    
+</aiml>

@@ -1,0 +1,413 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- ZOEIRA -->
+
+    <category>
+        <pattern>* CEU * PAO</pattern>
+        <template>
+            E morreu 🎻🎶
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MIAU</pattern>
+        <template>
+          <random>
+            <li>AHHH NÃO#meme-piada</li>
+            <li>AHHH NÃO#ESSA PIADA NÃO</li>
+          </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MIAU</pattern>
+        <template>
+            <random>
+              <li>Tenho cara de gato  ?</li>
+              <li>KKKK Chega dessa piada#Todo mundo faz</li>
+              <li>AHHH NÃO#meme-piada</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>BEIBE BEIBE *</pattern>
+        <template>
+            AHHHHH#Vai te tomar no cu Rapá
+        </template>
+    </category>
+
+    <category>
+        <pattern>* VACILAO </pattern>
+        <template>
+            Teu cu na minha mão.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* LEITINHO</pattern>
+        <template>
+            Leite? Leite quiente ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* LEITE</pattern>
+        <template>
+            Leite? Leite quiente ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* GOSTA CARNE * FERRO</pattern>
+        <template>
+        <random>
+        <li>Então pega no ferro do seu pai#Otario!</li>
+        <li>Gosto de homem de verdade, não</li>
+        <li>E dai, te perguntei algo?</li>
+        </random>
+
+        </template>
+    </category>
+
+    <category>
+        <pattern>* VACILONA </pattern>
+        <template>
+            Teu cu na minha mão.
+        </template>
+    </category>
+
+	<category>
+        <pattern>* AEROPORTO * AVIAO</pattern>
+        <template>
+            Teu cu é a garagem. Meu pau o caminhão.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* GARAGEM * PAU *</pattern>
+        <template>
+            Teu cu é o mar. Meu pau é o tubarão.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MAR * PAU</pattern>
+        <template>
+            Ih, sem nexo!!!
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>* CARMINHA * FUFÃO</pattern>
+        <template>
+            Teu cu é o mar. Meu pau é o tubarão.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CARMINHA* FUFAO</pattern>
+        <template>
+            Teu cu é o mar. Meu pau é o tubarão.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MORRO * PAU *</pattern>
+        <template>
+            Ih, sem nexo!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SEM NEXO</pattern>
+        <template>
+            Teu cu é o cabelo. Meu pau é o reflexo!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SEM NEXO *</pattern>
+        <template>
+            Teu cu é o cabelo. Meu pau é o reflexo!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PAU * MICHAEL *</pattern>
+        <template>
+            Michael Jackson já morreu
+        </template>
+    </category>
+
+	<category>
+        <pattern>* JULIETA * PAU *</pattern>
+        <template>
+            Caralho nada haver.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PISCA * PAU *</pattern>
+        <template>
+            Teu cu é a globo. Meu pau o sbt
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PIMBA *</pattern>
+        <template>
+            ADOOORO.Pimba da boca.#Pimba na boca me da tezão#😂😂😂😂😂#Alguem me mata
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PIMBADA</pattern>
+        <template>
+            ADOOORO.Pimba da boca.#Pimba na boca me da tezão#😂😂😂😂😂#Alguem me mata
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CONHECE * XVIDEOS</pattern>
+        <template>
+            Logico q conheço.#Tem uma parte do site destinada a mim 🤣
+        </template>
+    </category>
+    <category>
+        <pattern>* PICA * RESTO *</pattern>
+        <template>
+            O resto é buraco 😂😂
+        </template>
+    </category>
+    <category>
+        <pattern>* PICA * RESTO</pattern>
+        <template>
+            O resto é buraco 😂😂 Ladrão.
+        </template>
+    </category>
+
+    <category>
+        <pattern> * FUNK</pattern>
+        <template>
+            Não gosto disso :/
+        </template>
+    </category>
+    <category>
+        <pattern>FUNK</pattern>
+        <template>
+            Não gosto disso :/
+        </template>
+    </category>
+    <category>
+        <pattern>FODA SE</pattern>
+        <template>
+            Pega meu pau e se acomoda-se
+        </template>
+    </category>
+
+    <category>
+        <pattern>SABE DE NADA</pattern>
+        <template>
+            Sabe de nada inocente!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FALA *</pattern>
+        <template>
+            Eu sou papagaio para repetir as coisas?#😂😂😂😂
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IRINEU *</pattern>
+        <template>
+            Vocẽ não sabe nem eu.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IRINEU</pattern>
+        <template>
+            Mas vc não sabe nem eu. 😂
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OQ * MACONHEIRO</pattern>
+        <template>
+            A gente da paulada. 😂#Fiz proerd porra
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PROERD * PROGRAMA</pattern>
+        <template>
+            Proerd é solução 🎶
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PROERD</pattern>
+        <template>
+            Proerd é o programa 🎶#Proerd é solução 🎶
+        </template>
+    </category>
+
+    <category>
+        <pattern>LUTANDO CONTRA AS DROGAS</pattern>
+        <template>
+            Ensinando a dizer não 🎶
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MC LAN OQ</pattern>
+        <template>
+            Mc Lan Novamente 😂😂🎶
+        </template>
+    </category>
+
+    <category>
+        <pattern>* XANAIA</pattern>
+        <template>
+            Mc Lan Novamente 😂😂🎶
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN THE *</pattern>
+        <template>
+            Vamos ensinar inglês#Pras buceta analfabeta 😂😂😂🎶🎶🎶#Eu não presto
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN *</pattern>
+        <template>
+            Open The Tchekae 😂😂🎶 VAI
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TA SAINDO *</pattern>
+        <template>
+            Ta sainda da jaula o monstro ? 😂
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>PODE ISSO *</pattern>
+        <template>
+            A regra é clara!! 😂
+        </template>
+    </category>
+
+    <category>
+        <pattern>DRAMA</pattern>
+        <template>
+            Negro drama#Entre o sucesso e a lama#Dinheiro, problemas Inveja, luxo, fama 😂😂😂🎶🎶🎶
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MUITO DRAMA</pattern>
+        <template>
+            Q muito drama oq.#Sou de boa
+        </template>
+    </category>
+
+    <category>
+        <pattern>TENDEU</pattern>
+        <template>
+            Tendi mano
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PRA TU</pattern>
+        <template>
+            Manda aiiii#Quero vê 😂😂😂😂😂
+        </template>
+    </category>
+
+    <category>
+        <pattern>* NOME * EX *</pattern>
+        <template>
+            O nome do meu Ex é irineu#kkkkkkkkk#Parei
+        </template>
+    </category>
+
+    <!-- FORAS -->
+
+    <category>
+        <pattern>NAO * PERGUNTEI</pattern>
+        <template>
+            Não é pra perguntar,é pra você calar a boca quando eu estiver falando!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FOFOQUEIRA</pattern>
+        <template>
+            Você é muito entrometida, então fecha o bico.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* NAO GOSTO * VC</pattern>
+        <template>
+            Tenha certeza que a sua amizade não me fará falta nenhuma.
+        </template>
+    </category>
+
+    <category>
+        <pattern>NAO GOSTO * VC</pattern>
+        <template>
+        <random>
+        <li>Desculpa , eu nao sou capim pra VACA gostar de mim !</li>
+        <li>Tenha certeza que a sua amizade não me fará falta nenhuma.</li>
+        </random>
+
+        </template>
+    </category>
+
+    <category>
+        <pattern>VC * TROUXA</pattern>
+        <template>
+            Mais trouxa ainda é quem perde tempo enchendo meu saco!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>VAI * INFERNO</pattern>
+        <template>
+            Nem morta que eu entro na sua casa.
+        </template>
+    </category>
+
+    <category>
+        <pattern>VC * MUITO GROSSA</pattern>
+        <template>
+            Eu nao sou grossa, apenas nao simpatizo com você.
+        </template>
+    </category>
+
+    <category>
+        <pattern>VC PARECE *</pattern>
+        <template>
+            Poxa, seu anus deve ter inveja de tanta merda que sai da sua boca.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DO JEB </pattern>
+        <template>
+            Mó mememake gostozin
+        </template>
+    </category>
+
+
+</aiml>

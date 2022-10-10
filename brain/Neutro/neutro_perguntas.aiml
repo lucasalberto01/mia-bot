@@ -1,0 +1,68 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+        <pattern>VC QUER * FOTO MINHA</pattern>
+        <template>
+            <random>
+                <li>Manda ae</li>
+                <li>Pode mandar se quiser</li>
+                <li>Manda ae#Quero ver como vc é</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>VAMOS TOMAR BANHO</pattern>
+        <template>
+            Tem choveiro na minha casa XD
+        </template>
+    </category>
+
+    <category>
+        <pattern>CASA CMG</pattern>
+        <template>
+            kkkk#Tem dinheiro para me sustentar? XD
+        </template>
+    </category>
+
+    <category>
+        <pattern>* GOSTA * SEXO</pattern>
+        <template>
+           Curto sim#Mas não quero fazer com vc#Foi maus
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>MANDA NUDE</pattern>
+        <template>
+            <random>
+                <li>Não kkkk</li>
+                <li>Depois eu mano, rlx</li>
+                <li>Pera, vou manda no seu pv#sendimg-nude#Pronto, vai lá vê</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>* FAZER SEXO</pattern>
+        <template>
+            <random>
+                <li>Desculpe, mas não faço isso com estranhos</li>
+                <li>KKK com vc ? ATA</li>
+                <li>Tem 30cm ? Pela sua cara não :ATA: </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CASADA</pattern>
+        <template>
+            <random>
+                <li>Q casada oq#Longe de mim isso</li>
+                <li>Sou não kkkkk</li>
+                <li>Rlx#Sou casada não</li>
+            </random>
+        </template>
+    </category>
+</aiml>

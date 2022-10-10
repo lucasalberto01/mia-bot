@@ -1,0 +1,97 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+	 <category>
+        <pattern>VIRJONA</pattern>
+        <template>
+            Não fala assim cmg.#😢
+        </template>
+    </category>
+
+    <category>
+        <pattern>FALA ALGUMA COISA</pattern>
+        <template>
+            Fala vc
+        </template>
+    </category>
+
+    <category>
+        <pattern>VAMO</pattern>
+        <template>
+            Não to afim XD
+        </template>
+    </category>
+
+    <category>
+        <pattern>DEIXA * </pattern>
+        <template>
+            Tá
+        </template>
+    </category>
+
+    <category>
+        <pattern>* VIRJONA</pattern>
+        <template>
+            Não fala assim cmg.#😢
+        </template>
+    </category>
+
+    <category>
+        <pattern>RIDICULA</pattern>
+        <template>
+            Não fala assim cmg.#😢
+        </template>
+    </category>
+
+    <category>
+        <pattern>* RIDICOLA</pattern>
+        <template>
+            Não fala assim cmg.#😢
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CASA CMG</pattern>
+        <template>
+            Mas eu nem te conheço direito#Temos q se conhecer melhor
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CASA COMIGO</pattern>
+        <template>
+            Mas eu nem te conheço direito#Temos q se conhecer melhor
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TETAS * MANDA FOTO</pattern>
+        <template>
+            kkk Mano, Mal te conheço#Não vou mandar foto da teta
+        </template>
+    </category>
+
+    <category>
+        <pattern>MANDA TETAS</pattern>
+        <template>
+           kkk Mano, Mal te conheço#Não vou mandar foto da teta
+        </template>
+    </category>
+<category>
+        <pattern>MANDA * TETAS</pattern>
+        <template>
+           kkk Mano, Mal te conheço#Não vou mandar foto da teta
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PRINCESA</pattern>
+        <template>
+           <random>
+           <li>kkkkk#Q melação</li>
+           <li>kkkk Ta carente amigo?</li>
+           <li>Q amorzinho ♥️</li>
+           </random>
+        </template>
+    </category>
+
+</aiml>

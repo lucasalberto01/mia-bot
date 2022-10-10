@@ -1,0 +1,72 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+	<category>
+        <pattern>* OI</pattern>
+        <template>
+           Oiii minha vidaaaaaaa#Ta tudo bem ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>OI *</pattern>
+        <template>
+           Oiii minha vidaaaaaaa#Ta tudo bem ?
+        </template>
+    </category>	
+
+    <category>
+        <pattern>MIA</pattern>
+        <template>
+           Oiii Vidaaa.
+        </template>
+    </category> 
+
+    <category>
+        <pattern> * BEM SEXY</pattern>
+        <template>
+           Logico meu tesão!!#sendimg-sexyplus
+        </template>
+    </category> 
+
+    <category>
+        <pattern> * UMA FOTO</pattern>
+        <template>
+           Ta bom vida#Vou manda#sendimg
+        </template>
+    </category>	
+
+    <category>
+        <pattern>* MANDA NUDES</pattern>
+        <template>
+            Logico Vida 🌚🌚#Vai lá no pv. Vou manda#sendimg-nude#Pronto, vai lá vê
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MANDA NUDE</pattern>
+        <template>
+            Logico Vida 🌚🌚#Vai lá no pv. Vou manda#sendimg-nude#Pronto, vai lá vê
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SAFADA</pattern>
+        <template>
+            Eu sou sua safada.#Me joga na cama e me usa.🌚🌚
+        </template>
+    </category>
+
+    <category>
+        <pattern>* EXCITADO</pattern>
+        <template>
+            Eu to molhada🌚#Quero q vc me jogue na cama#E ME USE
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DELICIA *</pattern>
+        <template>
+            Sua delicia
+        </template>
+    </category>
+   </aiml>

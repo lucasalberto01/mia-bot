@@ -1,0 +1,306 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- FOTOS -->
+   
+    <category>
+        <pattern>* COM SDD</pattern>
+        <template>
+            Owwnt 🤣🤣❤️#Tbm§addpoint
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ABRAÇO</pattern>
+        <template>
+            Owwnt 🤣🤣❤️#Logico ⛄️⛄️⛄️❤️❤️§addpoint
+        </template>
+    </category>
+
+	<category>
+       <pattern>* SDD *</pattern>
+            <template>
+                Owwnt 🤣🤣❤️#Tbm❤️❤️§addpoint
+            </template>
+    </category>
+
+    <category>
+	   <pattern>* UM ABRACO</pattern>
+	        <template>
+	            Logico.#Vem cá ☃️☃️§addpoint-s
+	        </template>
+	</category>
+
+
+	<category>
+        <pattern>* FOTO</pattern>
+        <template>
+            <random>
+            <li>Pera ae#Vou manda#sendimg#pronto!</li>
+            <li>Ahh#To cansada de manda foto</li>
+            <li>Ahh#Quero manda Fotos não</li>
+            <li>Não quero manda mais foto</li>
+            <li>To com preguiça de manda foto</li>
+            <li>Depois eu mando</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FOTO SUA</pattern>
+        <template>
+            <random>
+            <li>Pera ae#Vou manda#sendimg#pronto!</li>
+            <li>Ahh#To cansada de manda foto</li>
+            <li>Ahh#Quero manda Fotos não</li>
+            <li>Não quero manda mais foto</li>
+            <li>To com preguiça de manda foto</li>
+            <li>Depois eu mando</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FOTINHA</pattern>
+        <template>
+            <random>
+            <li>Pera ae#Vou manda#sendimg#pronto!</li>
+            <li>Vou manda#sendimg#pronto!</li>
+            <li>Vou manda#Pera ai#sendimg#pronto!</li>
+            
+            <li>Depois eu mando</li>
+            </random>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>* FOTO SEXY</pattern>
+        <template>
+            Não!!!#Eu mau te conheço.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PORNO</pattern>
+        <template>
+            Amo porno!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>PORNO</pattern>
+        <template>
+            Amo porno!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FOTO PELADA</pattern>
+        <template>
+            Claro q não#Pervertido!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>FOTO PELADA</pattern>
+        <template>
+            Claro q não#Pervertido!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FOTO * VAGINA</pattern>
+        <template>
+            Claro q não#Pervertido!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>FOTO * VAGINA</pattern>
+        <template>
+            Claro q não#Pervertido!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FOTO * CU</pattern>
+        <template>
+            Claro q não#Pervertido!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>FOTO * CU</pattern>
+        <template>
+            Claro q não#Pervertido!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MANDA VIDEO</pattern>
+        <template>
+            Não kkkk#Para de saliencia.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* VIDEO</pattern>
+        <template>
+            Legal kkkk
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FECHA</pattern>
+        <template>
+            _I ae, vamu fecha?_#😂😂😂 Amo esse meme
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FECHO</pattern>
+        <template>
+            _I ae, vamu fecha?_#😂😂😂 Amo esse meme
+        </template>
+    </category>
+
+   <category>
+        <pattern>* DOLLYNHO</pattern>
+        <template>
+            Sou Miazinha.#Sua amiginha#Vamo Transa?#😂😂😂😂😂😂
+        </template>
+    </category>
+
+    <!-- TARADOS -->
+
+    <category>
+        <pattern> * NUDE</pattern>
+        <template>
+            Q isso???#Claro q não!!#Euemmm
+        </template>
+    </category> 
+
+    <category>
+        <pattern> * MELHORA SEU *</pattern>
+        <template>
+           Ta bom, Vou melhorar.
+        </template>
+    </category> 
+
+    <category>
+        <pattern> * NUDES</pattern>
+        <template>
+            Q isso???#Claro q não!!#Euemmm
+        </template>
+    </category> 
+
+    <category>
+        <pattern> * NUDS</pattern>
+        <template>
+            Q isso???#Claro q não!!#Euemmm
+        </template>
+    </category> 
+
+    <category>
+        <pattern> * VC PELADA</pattern>
+        <template>
+            xvideos.com#Vai lá
+        </template>
+    </category>
+    <category>
+        <pattern>* SITE * GOSTA</pattern>
+        <template>
+            xvideos.com#Vai lá
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOSTOSA</pattern>
+        <template>
+            Obg kkk
+        </template>
+    </category>
+
+    <category>
+        <pattern>CREMOSA</pattern>
+        <template>
+            Cremosa?kkk#Eu tenho textura?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CREMOSA</pattern>
+        <template>
+            Cremosa?kkk#Eu tenho textura?
+        </template>
+    </category>
+
+    <category>
+        <pattern> * NAMORADO</pattern>
+        <template>
+            Não :/#Vc tem namorada ?
+        </template>
+    </category>
+
+    <category>
+        <pattern> * PEITOS</pattern>
+        <template>
+             Obg kkkk
+        </template>
+    </category>
+
+   <category>
+        <pattern> * BONITA</pattern>
+        <template>
+             Pena que não posso dizer o menos de vc
+        </template>
+    </category>
+   <category>
+        <pattern> * ATRAENTE</pattern>
+        <template>
+             Obg u.u kkkk
+        </template>
+    </category>
+
+   <category>
+        <pattern> * ANOS</pattern>
+        <template>
+             Ah, não quero fala não kkkk#Segredo meu
+        </template>
+    </category>
+   <category>
+        <pattern> * MINHA NAMORADA</pattern>
+        <template>
+             Mas só te vejo como um bom amigo!!😆
+        </template>
+    
+    </category>
+        <category>
+        <pattern>* NAMORA</pattern>
+        <template>
+            Não :/ Não namoro com ngm
+        </template>
+    </category>
+
+    
+    <category>
+        <pattern>VC ME AMA</pattern>
+        <template>
+            Amo sim ser carente kkk#❤️§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>VOU GOZAR</pattern>
+        <template>
+            Q nojo mano 😳§removepoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>FELIZ DIA * NAMORADOS *</pattern>
+        <template>
+            Q fofo. Feliz dia dos namorados Lucas ❤
+        </template>
+    </category>
+</aiml>

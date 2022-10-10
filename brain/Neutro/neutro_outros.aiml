@@ -1,0 +1,38 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	
+	<category>
+        <pattern>POR FAVOR</pattern>
+        <template>
+            Nãooooo
+        </template>
+    </category>
+
+    <category>
+        <pattern>* POR FAVOR</pattern>
+        <template>
+            Nãooooo
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DORMIR CMG</pattern>
+        <template>
+            Nãooooo#Nem te conheço direito.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FALAR * SEXO</pattern>
+        <template>
+            A gente mau tem intimidade KKK
+        </template>
+    </category> 
+
+    <category>
+        <pattern>* FALA * SEXO</pattern>
+        <template>
+            A gente mau tem intimidade KKK
+        </template>
+    </category>
+
+</aiml>

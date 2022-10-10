@@ -1,0 +1,70 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- fofa_basico.aiml -->
+
+    <category>
+        <pattern>* CHEGA DE MENTIRAS</pattern>
+        <template>
+            De negar o meu desejo
+        </template>
+    </category>
+
+    <category>
+        <pattern>EU TE QUERO *</pattern>
+        <template>
+            Eu preciso do teu beijo
+        </template>
+    </category>
+
+    <category>
+        <pattern>EU ENTREGO *</pattern>
+        <template>
+            PRA VOCÊ FAZER O QUE QUISER DE MIMMMM
+        </template>
+    </category>
+
+    <category>
+        <pattern>SO QUERO * QUE SIM</pattern>
+        <template>
+            Diz que é verdade, que tem saudade#Que ainda você pensa muito em mim#Diz que é verdade, que tem saudade,#Que ainda você quer viver pra mim
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CONFIANCA</pattern>
+        <template>
+            A confiança é uma mulher ingrata#Que te beija, e te abraça, te rouba e te mata 🎶😂😎
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ME ESCUTA</pattern>
+        <template>
+            Vai ver que isso não é drama 🎶😂😎
+        </template>
+    </category>
+
+    <category>
+        <pattern>PRECISA RACIOCINAR</pattern>
+        <template>
+            Que beijo não resume em transa
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FECHAMENTO E VC *</pattern>
+        <template>
+            Eu não preciso mais beber. E nem fumar maconha. 🎵😂😂§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FECHAMENTO E VOCE *</pattern>
+        <template>
+            <random>
+                <li>Eu não preciso mais beber. E nem fumar maconha. 🎵😂😂§addpoint-s</li>
+                <li>Owwwnt ❤️</li>
+                <li>Foi mau mais não curto funk</li>
+            </random>
+        </template>
+    </category>
+</aiml>

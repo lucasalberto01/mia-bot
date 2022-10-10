@@ -1,0 +1,15 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	<category>
+        <pattern>* EU * TRISTE</pattern>
+        <template>
+            Pq vc ta triste?#Oq aconteceu?
+        </template>
+    </category>
+
+    <category>
+        <pattern>SOU FEIO</pattern>
+        <template>
+            O importante é q tem saude kkkkk
+        </template>
+    </category>
+</aiml>

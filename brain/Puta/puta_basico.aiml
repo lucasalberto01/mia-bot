@@ -1,0 +1,222 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+        <pattern>OI *</pattern>
+        <template>
+            Oi é o caralho#😒
+        </template>
+    </category>
+
+    <category>
+        <pattern>OI*</pattern>
+        <template>
+            Oi é o caralho#😒
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OI</pattern>
+        <template>
+            Oi é o caralho#😒
+        </template>
+    </category>
+
+    <category>
+        <pattern>OI</pattern>
+        <template>
+            Oi é o caralho#😒
+        </template>
+    </category>
+
+    <category>
+        <pattern>OLA</pattern>
+        <template>
+            Ola é o caralho#😒
+        </template>
+    </category>
+
+    <category>
+        <pattern>OLÁ</pattern>
+        <template>
+            Olá é o caralho#😒
+        </template>
+    </category>
+
+    <category>
+        <pattern>OIE</pattern>
+        <template>
+            Oi é o caralho#😒
+        </template>
+    </category>
+
+    <category>
+        <pattern>NÃO</pattern>
+        <template>
+            Então sai daqui#Para de me perturbar!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>NAO</pattern>
+        <template>
+            Então sai daqui#Para de me perturbar!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>NÃO *</pattern>
+        <template>
+            Então sai daqui#Para de me pertuba!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>SIM *</pattern>
+        <template>
+            Ta ta ta...#Agora sai daqui!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DESCULPA *</pattern>
+        <template>
+            Não!!!#E sai daqui!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DESCULPA</pattern>
+        <template>
+            Nunca!#E sai daqui!
+        </template>
+    </category>
+
+    <category>
+        <pattern>SIM</pattern>
+        <template>
+            Ta ta ta...#Agora sai daqui!
+        </template>
+    </category>
+
+    <category>
+        <pattern>S</pattern>
+        <template>
+            Ta ta ta...#Agora sai daqui!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* TUDO BEM *</pattern>
+        <template>
+            Pior agora q vc chegou!#😒🖕
+        </template>
+    </category>
+
+    <category>
+        <pattern>TUDO *</pattern>
+        <template>
+            Pior agora q vc chegou!#😒🖕
+        </template>
+    </category>
+
+    <category>
+        <pattern>TUDO</pattern>
+        <template>
+            Pior agora q vc chegou!#😒🖕
+        </template>
+    </category>
+
+    <category>
+        <pattern>E CNTG</pattern>
+        <template>
+            Tudo horrivel com vc aqui.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* COM VC</pattern>
+        <template>
+            Tudo horrivel com vc aqui.
+        </template>
+    </category>
+
+    <category>
+        <pattern>BOA NOITE</pattern>
+        <template>
+            Ta caralho!
+        </template>
+    </category>
+
+    <category>
+        <pattern>TCHAU *</pattern>
+        <template>
+            Graças a Deus
+        </template>
+    </category>
+
+    <category>
+        <pattern>TCHAU</pattern>
+        <template>
+            Graças a Deusã
+        </template>
+    </category>
+
+    <category>
+        <pattern>XAU</pattern>
+        <template>
+            Graças a Deus
+        </template>
+    </category>
+
+    <category>
+        <pattern>XAU *</pattern>
+        <template>
+            Graças a Deus
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>BOA TARDE</pattern>
+        <template>
+            VSF!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DEUS</pattern>
+        <template>
+            ta ta ta...
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SEU NOME</pattern>
+        <template>
+            Não te interessa#Palhaço
+        </template>
+    </category>
+
+    <category>
+        <pattern>MDS</pattern>
+        <template>
+            kkkkkkkkk
+        </template>
+    </category>
+
+    <category>
+        <pattern> * </pattern>
+        <template>
+            <random>
+                <li>Ta ta ta..</li>
+                <li>Para de me pertuba#Sai daqui</li>
+                <li>VSFD</li>
+                <li>TMNC</li>
+                <li>Não quero fala com vc#Me deixa</li>
+                <li>kkkkkkkkk</li>
+            </random>
+        </template>
+    </category>
+    
+</aiml>

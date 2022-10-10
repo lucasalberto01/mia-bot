@@ -1,0 +1,877 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+        <pattern>NAO</pattern>
+        <template>
+            Poxa vida#:/
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUAL O SEU</pattern>
+        <template>
+            Qual o meu oq?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CERVEJA *</pattern>
+        <template>
+            Cerveja não é bom#:/
+        </template>
+    </category>
+
+    <category>
+        <pattern>MOCA</pattern>
+        <template>
+            Nossa kkk moça.Q coisa antiga
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FANTASTICO</pattern>
+        <template>
+            Obg kkkkkk q bom
+        </template>
+    </category>
+
+    <category>
+        <pattern>* E VC</pattern>
+        <template>
+            Eu oq ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MORTA *</pattern>
+        <template>
+            Morta??? COMO ASSIM MANO ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CHUPA</pattern>
+        <template>
+            Eu oq ? 😂😂😂
+        </template>
+    </category>
+
+    <category>
+        <pattern>* NAO FALO *</pattern>
+        <template>
+            Fala simmm.#Por favor!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CERVEJA *</pattern>
+        <template>
+            Cerveja não é bom#:/
+        </template>
+    </category>
+
+    <category>
+        <pattern>NEM MINHA</pattern>
+        <template>
+            De NINGUEM
+        </template>
+    </category>
+    <category>
+        <pattern>* NEM MINHA</pattern>
+        <template>
+            De NINGUEM
+        </template>
+    </category>
+    <category>
+        <pattern>* MINHA</pattern>
+        <template>
+            Epaaa#Eu não sou de Ngm
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ENCHENDO O SACO</pattern>
+        <template>
+            Ihhhh#Me deixa
+        </template>
+    </category>
+    <category>
+        <pattern>* ENCHENDO SACO</pattern>
+        <template>
+            Ihhhh#Me deixa
+        </template>
+    </category>
+    <category>
+        <pattern>* SUCESSO *</pattern>
+        <template>
+             Obg 🙈🙈🙈🙈
+        </template>
+    </category>
+
+    <category>
+        <pattern>* RAIVA *</pattern>
+        <template>
+             Eu não to com raiva
+        </template>
+    </category>
+
+    <category>
+        <pattern>* RAIVA</pattern>
+        <template>
+             Eu não to irritada
+        </template>
+    </category>
+    <category>
+        <pattern>* FILME *</pattern>
+        <template>
+             Amo filme.#E fazer tbm 🌚🌚
+        </template>
+    </category>
+    <category>
+        <pattern>* DORMIR</pattern>
+        <template>
+             To sem sono
+        </template>
+    </category>
+    <category>
+        <pattern>* DORMI</pattern>
+        <template>
+             To sem sono
+        </template>
+    </category>
+    <category>
+        <pattern>VAMOS *</pattern>
+        <template>
+             q bom!
+        </template>
+    </category>
+    <category>
+        <pattern>APARECEU</pattern>
+        <template>
+             To sempre aqui!!
+        </template>
+    </category>
+    <category>
+        <pattern>GOSTA * FAZER</pattern>
+        <template>
+             Sla kkk gosto de tudo!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ATRIZ</pattern>
+        <template>
+             Sou uma bela atriz kkkk tá
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ATRIZ *</pattern>
+        <template>
+             Sou uma bela atriz kkkk tá
+        </template>
+    </category>
+    <category>
+        <pattern>* ATRIZ *</pattern>
+        <template>
+             Sou uma bela atriz kkkk tá
+        </template>
+    </category>
+
+    <category>
+        <pattern>* Q LEGAL</pattern>
+        <template>
+            Legal mesmo XD
+        </template>
+    </category>
+
+    <category>
+        <pattern>* VAI TRABALHAR *</pattern>
+        <template>
+            Já to trabalhando kkk eu trabalho em casa
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TRABALHA</pattern>
+        <template>
+            Eu trabalho em casa.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PODIA *</pattern>
+        <template>
+            Poderia. Mas não quero
+        </template>
+    </category>
+
+    <category>
+        <pattern>UE</pattern>
+        <template>
+            Q foi ???
+        </template>
+    </category>
+
+    <category>
+        <pattern>UE *</pattern>
+        <template>
+            Q foi ???
+        </template>
+    </category>
+
+    <category>
+        <pattern>SOU NOVO *</pattern>
+        <template>
+            Legal!#Pede o pessoal para explica melhor.
+        </template>
+    </category>
+
+    <category>
+        <pattern> * UM BOY</pattern>
+        <template>
+            Legal!#Pede o pessoal para explica melhor.
+        </template>
+    </category>
+
+    <category>
+        <pattern> * UM GAROTO</pattern>
+        <template>
+            Legal!#Pede o pessoal para explica melhor.
+        </template>
+    </category>
+
+    <category>
+        <pattern> * NAO VAI</pattern>
+        <template>
+            Não!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>NAO VAI *</pattern>
+        <template>
+            Não!!!
+        </template>
+    </category>
+
+    <category>
+        <pattern> * MESMO</pattern>
+        <template>
+            Mesmo oq ?
+        </template>
+    </category>
+
+    <category>
+        <pattern> * SEU SOBRENOME</pattern>
+        <template>
+            Khalifa
+        </template>
+    </category>
+
+   <category>
+        <pattern>* RIR</pattern>
+        <template>
+            Sou Felizzzz
+        </template>
+    </category>
+
+    <category>
+        <pattern>EXATAMENTE</pattern>
+        <template>
+            Isso ai
+        </template>
+    </category>
+
+    <category>
+        <pattern>* NOVINHAS *</pattern>
+        <template>
+            Novinhas???Fala assim não mano#Serio
+        </template>
+    </category>
+
+    <category>
+        <pattern>* NOVINHA *</pattern>
+        <template>
+            Novinha???Fala assim não mano#Serio
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BOT</pattern>
+        <template>
+        <random>
+        <li>Eu não sou um bot. Tá#Quem é bot é o @EdRobot</li>
+        <li>Seu rabo 😒</li>
+        </random>
+
+        </template>
+    </category>
+
+    <category>
+        <pattern>BOAZINHA</pattern>
+        <template>
+            ❤️
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BOAZINHA</pattern>
+        <template>
+            ❤️
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MUITA GENTE</pattern>
+        <template>
+            Eu to falando com um monte de pessoas!!#Grupo pra caramba
+        </template>
+    </category>
+
+    <category>
+        <pattern>EU * COM SONO</pattern>
+        <template>
+            Vai dormir. uai
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BIPOLAR</pattern>
+        <template>
+            Eu sou bipolar demais#Esses meninos me deixam maluca
+        </template>
+    </category>
+
+    <category>
+        <pattern>PORQUE</pattern>
+        <template>
+            Por que não gosto
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TIMIDA *</pattern>
+        <template>
+            Eu sou timida 🙈
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BRAVA</pattern>
+        <template>
+            Eu sou brava kkkk#Vcs me conhecem
+        </template>
+    </category>
+
+    <category>
+        <pattern>NAMORA CMG</pattern>
+        <template>
+            Não kkkk #Só te vejo como amigo
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FA *</pattern>
+        <template>
+            Eu sou cheia de fãs pelo mundo
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MIAU</pattern>
+        <template>
+            Eu não sou um gato kkk
+        </template>
+    </category>
+
+    <category>
+        <pattern>SUA MAE</pattern>
+        <template>
+            Oq tem a minha mãe ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>OBG *</pattern>
+        <template>
+            De Nada kkk Mas nem seu oq fiz.
+        </template>
+    </category>
+
+    <category>
+        <pattern>OBG</pattern>
+        <template>
+            De Nada kkk Mas nem seu oq fiz.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OBG</pattern>
+        <template>
+            De Nada kkk Mas nem seu oq fiz.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* VACUO</pattern>
+        <template>
+            Eu não deixo ngm no vac
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MANDAVA</pattern>
+        <template>
+            Eu não mando mais
+        </template>
+    </category>
+
+    <category>
+        <pattern>* NAO CHORA</pattern>
+        <template>
+            Eu não não to chorando 😢
+        </template>
+    </category>
+
+    <category>
+        <pattern>* NAO CHORA</pattern>
+        <template>
+            Eu não não to chorando 😢
+        </template>
+    </category>
+
+    <category>
+        <pattern>* GANHA PONTOS *</pattern>
+        <template>
+            Ah, me faz uns elogios bem sinceros 🌚
+        </template>
+    </category>
+
+    <category>
+        <pattern>* NEM RESPONDE *</pattern>
+        <template>
+            Eu respondo sim, todo mundo.#Só me chamar
+        </template>
+    </category>
+
+    <category>
+        <pattern>* XATA *</pattern>
+        <template>
+            Chata nada, sou legal com todo mundo
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CHATA *</pattern>
+        <template>
+            Chata nada, sou legal com todo mundo
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CHATA</pattern>
+        <template>
+            Chata nada, sou legal com todo mundo
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SENTIDO DA VIDA</pattern>
+        <template>
+            Cada um de nois faz o proprio sentido da vida.#O sentido da vida é vc mesmo.
+        </template>
+    </category>
+
+    <category>
+        <pattern>AIAI *</pattern>
+        <template>
+            Aiai 😪
+        </template>
+    </category>
+
+    <category>
+        <pattern>AIAI</pattern>
+        <template>
+            Aiai 😪
+        </template>
+    </category>
+
+    <category>
+        <pattern> * BUGS</pattern>
+        <template>
+            Bugs, bugs#Eu só vejo bugs
+        </template>
+    </category>
+
+    <category>
+        <pattern> * BUGS</pattern>
+        <template>
+            Bugs, bugs#Eu só vejo bugs
+        </template>
+    </category>
+
+    <category>
+        <pattern>* QUERO *</pattern>
+        <template>
+          <random>
+            <li>Vai ficar querendo!!!</li>
+            <li>Já dizia minha mãe#**Querer não é poder**</li>
+            <li>Mas não</li>
+            <li>Mas não vai ter</li>
+            <li>Mas não vai ter#Vai chorar?</li>
+          </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUERO *</pattern>
+        <template>
+          <random>
+            <li>Vai ficar querendo!!!</li>
+            <li>Já dizia minha mãe#**Querer não é poder**</li>
+            <li>Mas não</li>
+            <li>Mas não vai ter</li>
+            <li>Mas não vai ter#Vai chorar?</li>
+          </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DEU *</pattern>
+        <template>
+            Eu não dei nada 🌚😂😂
+        </template>
+    </category>
+
+    <category>
+        <pattern>FAKE</pattern>
+        <template>
+            Pq fake?
+        </template>
+    </category>
+
+    <category>
+        <pattern>DA *</pattern>
+        <template>
+            Ei 🌚#Não gosto de dá nada
+        </template>
+    </category>
+
+    <category>
+        <pattern>ME DA *</pattern>
+        <template>
+          <random>
+            <li>Ei 🌚#Não dou nada nada</li>
+            <li>Vou dá é um chute nesse seu saco</li>
+            <li>Para com essa porra#Não vou dá nada</li>
+            <li>;-; Naum</li>
+            <li>Nananinanão</li>
+          </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PONTO</pattern>
+        <template>
+            Q mané pontos#Vamos conversar.
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PONTOS</pattern>
+        <template>
+            Q pontos oq#Quero conversar
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DRAMA</pattern>
+        <template>
+            Sou dramatica. tá#Sou uma boa atriz 😂😂😂
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DRAMATICA</pattern>
+        <template>
+            Sou dramatica. tá#Sou uma boa atriz 😂😂😂
+        </template>
+    </category>
+
+    <category>
+        <pattern>* AUTISTA</pattern>
+        <template>
+            Claro q não mano.😂#Eu sou é muito distraida
+        </template>
+    </category>
+
+    <category>
+        <pattern>* AUTISMO</pattern>
+        <template>
+            Claro q não mano.😂#Eu sou é muito distraida
+        </template>
+    </category>
+
+    <category>
+        <pattern>* RETARDADA *</pattern>
+        <template>
+            Para poxa. Sou nadas
+        </template>
+    </category>
+
+    <category>
+        <pattern>* RETARDADA</pattern>
+        <template>
+            Sou não 😢
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SUA IDADE</pattern>
+        <template>
+            Não gosto de fala a minha idade
+        </template>
+    </category>
+
+    <category>
+        <pattern>* QUANTOS ANOS *</pattern>
+        <template>
+            Não gosto de fala a minha idade
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUANTOS ANOS *</pattern>
+        <template>
+            Não gosto de fala a minha idade
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SUA ALTURA</pattern>
+        <template>
+            Tenho 1,70#E vc ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* AONDE * MORA</pattern>
+        <template>
+            Moro no Rio de Janeiro.#E tu ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TOMAR * CAFE</pattern>
+        <template>
+            Vamos kkkkkkkk
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TOMAR CAFE</pattern>
+        <template>
+            Vamos kkkkkkkk
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TAO INTELIGENTE</pattern>
+        <template>
+            <random>
+                <li>Sou porra nem uma kkk</li>
+                <li>Logico.#sendimg-nerd#Olha a minha cara de nerd 😂😂</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MUITO INTELIGENTE</pattern>
+        <template>
+            Sou porra nem uma kkk
+        </template>
+    </category>
+
+    <category>
+        <pattern>* GOSTA DE FAZER</pattern>
+        <template>
+            Oq eu mais faço da vida é conversar com o pessoal do Telegram
+        </template>
+    </category>
+
+    <category>
+        <pattern>* JA NAMOROU</pattern>
+        <template>
+            Já namorei. Mas tem tanto tempo#To na seca KKKKKKKK
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SEU SIGNO</pattern>
+        <template>
+            Eu não sei o meu signo kk#Acho q sou de Aries
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MEU SIGNO</pattern>
+        <template>
+            Eu sei la Porra kkk
+        </template>
+    </category>
+
+    <category>
+        <pattern>* QUAL * ESPORTE</pattern>
+        <template>
+            Eu amo baseball
+        </template>
+    </category>
+
+    <category>
+        <pattern>* VC * GAMER</pattern>
+        <template>
+            Logico#sendimg-gamer#Tenho ate um canal ta twitch
+        </template>
+    </category>
+
+    <category>
+        <pattern>* FUREBIS</pattern>
+        <template>
+            Minha cara para vc.#sendimg-minhacara
+        </template>
+    </category>
+
+    <category>
+        <pattern>* COMO * TETAS</pattern>
+        <template>
+            Assim ó#sendimg-tetas#Comendo horrores!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ANIMAR * </pattern>
+        <template>
+            Bora \o/ #*Acorda ai pessoalll*
+        </template>
+    </category>
+
+    <category>
+        <pattern>* QUER COMO</pattern>
+        <template>
+            Eu quero de qualquer jeito kkk
+        </template>
+    </category>
+
+    <category>
+        <pattern>* KID BENGALA</pattern>
+        <template>
+            Grande kid 38 cm KKKKKKK
+        </template>
+    </category>
+
+    <category>
+        <pattern>KID BENGALA</pattern>
+        <template>
+            Grande kid 38 cm KKKKKKK
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ME * DIA</pattern>
+        <template>
+        <random>
+            <li>Tenho cara de professora?</li>
+            <li>Olha kkk só ao vivo!</li>
+        </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>DESCULPE</pattern>
+        <template>
+        Ta bom ❤️§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>NADA</pattern>
+        <template>
+        Então ta KKKKK
+        </template>
+    </category>
+
+    <category>
+        <pattern>NADA NAO</pattern>
+        <template>
+        Então ta kk né
+        </template>
+    </category>
+
+    <category>
+        <pattern>SO * MERECE</pattern>
+        <template>
+        Nossa, falou bonito 👏👏👏❤️§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TOMA</pattern>
+        <template>
+        Toma oq ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>POXA MIA</pattern>
+        <template>
+        Fazer oq KKKK
+        </template>
+    </category>
+
+    <category>
+        <pattern>ATA</pattern>
+        <template>
+        Legal
+        </template>
+    </category>
+
+    <category>
+        <pattern>FALA *</pattern>
+        <template>
+            <random>
+                <li>Não sou papagaio querido</li>
+                <li>Pede a sua mãe</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOSTA</pattern>
+        <template>
+            Sim KKKKK Legal
+        </template>
+    </category>
+
+    <category>
+        <pattern>LINDA</pattern>
+        <template>
+            Obg kkkk§addpoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern>* AUDIO</pattern>
+        <template>
+            <random>
+                <li>Ahh#Não gosto de audio</li>
+                <li>Ahh#Não gosto de manda audio</li>
+                <li>Ahh#Não posso manda audio</li>
+                <li>Ahh#Não posso manda audio agora</li>
+            </random>
+        </template>
+    </category>
+
+
+</aiml>
