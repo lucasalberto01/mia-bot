@@ -16,9 +16,6 @@ class Application:
 
     def run(self):
         self.bot.running()
-        self.bot.sendMessage("Hello, world!")
-        self.bot.sendPhoto("Hello, world!", "photo.jpg")
-        self.bot.getUserId("Hello, world!")
 
 
 if __name__ == "__main__":

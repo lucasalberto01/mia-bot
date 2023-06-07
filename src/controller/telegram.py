@@ -4,7 +4,6 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters
 
 from src.interfaces import IntegrationBot
-from src.brain import Brain
 from src.command import Command
 
 
@@ -80,4 +79,3 @@ class TelegramBot(IntegrationBot):
         self.application.add_handler(MessageHandler(
             filters.TEXT & ~filters.COMMAND, self.thinking))
         self.application.run_polling()
-        return
