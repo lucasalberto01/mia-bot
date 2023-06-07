@@ -7,4 +7,10 @@
             Android é 1000 vezes melhor q ios.
         </template>
     </category>
+    <category>
+        <pattern>* PHP</pattern>
+        <template>
+            PHP é uma merda, prefiro JAVA.
+        </template>
+    </category>
 </aiml>

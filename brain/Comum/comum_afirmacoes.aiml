@@ -450,6 +450,12 @@
             </random>
         </template>
     </category>
+    <category>
+        <pattern>ISSO AE</pattern>
+        <template>
+            Isso ai porra
+        </template>
+    </category>
 
 
 </aiml>

@@ -3,6 +3,12 @@
 class IntegrationBot:
     """ Integration Bot """
 
+    async def thinking(self):
+        """ Thinking """
+        pass
+
+    ### COMMANDS ###
+
     async def send_message(self, chat_id, message):
         """ Send message """
         pass
@@ -13,6 +19,10 @@ class IntegrationBot:
 
     async def send_photo(self, chat_id, photo, message=None):
         """ Send photo """
+        pass
+
+    async def send_git(self, chat_id, gif, message=None):
+        """ Send gif """
         pass
 
     async def send_action(self, chat_id):

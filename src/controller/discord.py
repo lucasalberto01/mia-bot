@@ -1,155 +1,62 @@
+
 import discord
-from discord.ext import commands
-
-from brain import *
-from info import *
-
-description = "An example bot to showcase the discord.ext.commands extension module. There are a number of utility commands being showcased here."
-
-bot = commands.Bot(command_prefix='!', description=description)
-bot.remove_command('help')
-
-@bot.event
-async def on_ready():
-    print('Logged in as')
-    print(bot.user.name)
-    print(bot.user.id)
-    print('------')
+from dotenv import load_dotenv
+from src.command import Command
+from src.interfaces import IntegrationBot
+from src.utils.typings import IServer, IUser
+load_dotenv()
 
 
-@bot.command()
-async def start(ctx):
-    """Adds two numbers together."""
-    await ctx.send('Olá. Me chamo Mia e to aqui para conversar contigo :3')
+class DiscordBot(discord.Client, Command, IntegrationBot):
+    def __init__(self, commands_bot: Command, intents=None):
+        super().__init__(intents=intents)
+        self.commands_bot = commands_bot
 
+    """ Discord Bot """
 
+    async def on_ready(self):
+        print(f'Logged on as {self.user}!')
 
-#### HISTORICO ## COMANDO PUBLICO ####
-@bot.command(pass_context=True)
-async def historico(ctx,):
-    """Adds two numbers together."""
-    conn = sqlite3.connect('banco_de_dados.db')
-    c = conn.cursor()
-    id_usuario = int(ctx.message.author.id)
-    li = ['📂 Historico de pontos 📂\n']
+    async def on_message(self, message: discord.Message):
+        if message.author == self.user:
+            return
 
-    for i in c.execute("SELECT frase, humor FROM historico WHERE id = '%s'" % id_usuario):
-        li.append('🔖 {} - {} ponto'.format(i[0], i[1]))
+        if message.content.startswith('?'):
+            if message.content.startswith('?status'):
+                user = IUser(message.author.id, message.author.name, message.author.discriminator)
+                response = self.commands_bot.status(user)
+                await message.channel.send(response)
 
-    saida0 = '\n'.join(li)
-    await ctx.send(saida0)
-    conn.commit()
+            if message.content.startswith('?history'):
+                user = IUser(message.author.id, message.author.name, message.author.discriminator)
+                response = self.commands_bot.history(user)
+                await message.channel.send(response)
 
+        user = IUser(message.author.id, message.author.name, message.author.discriminator)
+        server = IServer(message.channel.id, message.channel.name)
+        message = message.content
 
-@bot.command(pass_context=True)
-async def teste(ctx, member: discord.Member):
-    print('id ->', member.id)
+        await self.commands_bot.thinking(message, user, 1, server, False)
 
+    async def send_message(self, chat_id, message):
+        """ Send message """
+        print("send_message")
+        print(chat_id)
+        channel = self.get_channel(chat_id)
+        await channel.send(message)
 
+    async def send_reply(self, chat_id, message, reply_message_id):
+        """ Send reply message """
+        await self.get_channel(chat_id).send(message)
 
+    async def send_photo(self, chat_id, photo, message=None):
+        """ Send photo """
+        await self.get_channel(chat_id).send(message, file=discord.File(photo))
 
-#### ZERO ### COMANDO SUDO ####
-@bot.command(pass_context=True)
-async def zero(ctx, member: discord.Member):
-    """Adds two numbers together."""
-    if int(ctx.message.author.id) == int(393814222452162562) or int(ctx.message.author.id) == int(434817433367347212):
+    async def send_git(self, chat_id, gif, message=None):
+        """ Send gif """
+        await self.get_channel(chat_id).send(message, file=discord.File(gif))
 
-        if member == None:
-            await ctx.send('Esse comando tem q ser usando Marcando o Usuario')
-
-        else:
-            id_usuario = member.id
-            nome_usuario = member.name
-            frase = '🆕 Mudando dados do banco de dados do usuario {}'
-            numero = 0
-
-            conn = sqlite3.connect('banco_de_dados.db')
-            c = conn.cursor()
-            humor = 'Neutro'
-            pontos = 1
-            c.execute('UPDATE usuarios SET humor = ?, pontos = ? WHERE id = ?',
-                      (humor, pontos, id_usuario))
-            conn.commit()
-
-            await ctx.send(frase.format(nome_usuario))
-
-    else:
-        print('no adm')
-
-
-
-#### ZERO ### COMANDO SUDO ####
-@bot.command(pass_context=True)
-async def giff(ctx,):
-    """Adds two numbers together."""
-    if int(ctx.message.author.id) == int(393814222452162562) or int(ctx.message.author.id) == int(434817433367347212):
-        file = discord.File("gif/1.gif", filename="file.gif")
-        await ctx.send(file=file)
-    else:
-        print('no adm')
-
-
-
-#### STATUS ### COMANDO PUBLICO ####
-@bot.command(pass_context=True)
-async def status(ctx,):
-    ## ID -- NOME -- USER -- HUMOR -- PONTOS
-    conn = sqlite3.connect('banco_de_dados.db')
-    c = conn.cursor()
-    id_usuario = int(ctx.message.author.id)
-
-    for i in c.execute("SELECT * FROM usuarios WHERE id = '%s'" % id_usuario):
-
-        pontos = i[4]
-        humor = i[3]
-        frase = '🌸 Pontos: {}\n🌸 Humor: {}'
-        await ctx.send(frase.format(pontos, humor))
-
-    conn.commit()
-
-
-#### STATUS ### COMANDO PUBLICO ####
-@bot.command(pass_context=True)
-async def rank(ctx,):
-    ## ID -- NOME -- USER -- HUMOR -- PONTOS
-    if int(ctx.message.author.id) == int(393814222452162562) or int(ctx.message.author.id) == int(434817433367347212):
-        conn = sqlite3.connect('banco_de_dados.db')
-        c = conn.cursor()
-        li = ['Rank de pontos\n']
-
-        for i in c.execute("SELECT pontos, user FROM usuarios ORDER BY pontos DESC LIMIT 10"):
-            li.append(':beginner: **{}** : {} pontos'.format(i[1], i[0]))
-
-        saida0 = '\n'.join(li)
-        await ctx.send(saida0)
-
-        conn.commit()
-
-
-#### STATUS ### COMANDO PUBLICO ####
-@bot.command(pass_context=True)
-async def unrank(ctx,):
-    ## ID -- NOME -- USER -- HUMOR -- PONTOS
-    if int(ctx.message.author.id) == int(393814222452162562) or int(ctx.message.author.id) == int(434817433367347212):
-        conn = sqlite3.connect('banco_de_dados.db')
-        c = conn.cursor()
-        li = ['Rank de pontos\n']
-
-        for i in c.execute("SELECT pontos, user FROM usuarios ORDER BY pontos ASC LIMIT 10"):
-            li.append(':beginner: **{}** : {} pontos'.format(i[1], i[0]))
-
-        saida0 = '\n'.join(li)
-        await ctx.send(saida0)
-
-        conn.commit()
-
-
-def enviar(message, aa):
-    message.channel.send(aa)
-
-
-def run():
-    bot.run('')
-
-if __name__ == '__main__':
-    run()
+    async def send_action(self, chat_id):
+        """ Send action typing in chat """
+        pass

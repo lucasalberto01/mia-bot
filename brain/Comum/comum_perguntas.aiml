@@ -511,6 +511,17 @@
         </template>
     </category>
 
+    <category>
+        <pattern> * COMUNISMO</pattern>
+        <template>
+            <random>
+                <li>Eu sou comunista</li>
+                <li>Por favor, não fale de comunismo#Me da gatilho</li>
+                <li>Vamos mudar de assunto#Tmnc com esses papos</li>
+            </random>
+        </template>
+    </category>
+
 
     <!-- #################### PERGUNTAS COM CONTEXTO -->
 

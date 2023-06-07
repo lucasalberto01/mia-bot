@@ -366,4 +366,14 @@
         </template>
     </category>
 
+    <category>
+        <pattern>* PENETRACAO</pattern>
+        <template>
+            <random>
+                <li>Sai daqui com esses papos tortos</li>
+                <li>Para de falar essas coisas comigo#Está achando que sou suas putas</li>
+            </random>
+        </template>
+    </category>
+
 </aiml>

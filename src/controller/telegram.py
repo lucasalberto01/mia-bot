@@ -14,11 +14,12 @@ load_dotenv()
 class TelegramBot(IntegrationBot):
     """ Telegram Bot """
 
-    def __init__(self, commands: Command) -> None:
+    def __init__(self, commands: Command):
         self.token = os.getenv("TOKEN_TELEGRAM")
         self.commands = commands
         self.application = Application.builder().token(self.token).build()
 
+    ### COMMANDS ###
     async def start(self, update: Update, context: ContextTypes):
         message = self.commands.start()
         await update.message.reply_text(message)
@@ -32,7 +33,7 @@ class TelegramBot(IntegrationBot):
         message = self.commands.status(user)
         await update.message.reply_text(message)
 
-    async def info(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    async def info(self, update: Update, context: ContextTypes):
         # PEGAR DADOS
         chat = update.message.chat.type
         chat_titulo = update.message.chat.title
@@ -56,15 +57,6 @@ class TelegramBot(IntegrationBot):
     async def gif(self, update: Update, context: ContextTypes):
         file = open('assets/gif/1.gif', 'rb')
         await update.message.reply_animation(file)
-
-    async def check(self, update: Update, context: ContextTypes):
-        return self.commands.execute("check")
-
-    async def clear(self, update: Update, context: ContextTypes):
-        return self.commands.execute("clear")
-
-    async def plublicar(self, update: Update, context: ContextTypes):
-        return self.commands.execute("publicar")
 
     async def thinking(self, update: Update, context: ContextTypes):
         bot = context.bot
@@ -94,6 +86,7 @@ class TelegramBot(IntegrationBot):
 
         await self.commands.thinking(message.text, user, reply_id, server, is_reply_of_me or is_private)
 
+    ### INTEGRATION BOT ###
     async def send_message(self, chat_id, message):
         await self.application.bot.send_message(chat_id=chat_id, text=message)
 
@@ -102,6 +95,9 @@ class TelegramBot(IntegrationBot):
 
     async def send_photo(self, chat_id, photo, message=None):
         await self.application.bot.send_photo(chat_id=chat_id, photo=photo, caption=message)
+
+    async def send_git(self, chat_id, gif, message=None):
+        await self.application.bot.send_animation(chat_id=chat_id, animation=gif, caption=message)
 
     async def send_action(self, chat_id):
         await self.application.bot.send_chat_action(chat_id=chat_id, action="typing")
@@ -113,9 +109,6 @@ class TelegramBot(IntegrationBot):
         self.application.add_handler(CommandHandler("history", self.history))
         self.application.add_handler(CommandHandler("gif", self.gif))
         self.application.add_handler(CommandHandler("info", self.info))
-        self.application.add_handler(CommandHandler("check", self.check))
-        self.application.add_handler(CommandHandler("clear", self.clear))
-        self.application.add_handler(CommandHandler("publicar", self.plublicar))
         self.application.add_handler(MessageHandler(
             filters.TEXT & ~filters.COMMAND, self.thinking))
         self.application.run_polling()
