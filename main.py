@@ -9,7 +9,7 @@ from src.data_layer import DataLayer
 class Application:
     def __init__(self):
         self.data_layer = DataLayer()
-        self.brain = Brain()
+        self.brain = Brain(self.data_layer)
         self.commands = Command(self.data_layer, self.brain)
         self.bot = TelegramBot(self.commands)
         self.commands.set_bot(self.bot)

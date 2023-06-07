@@ -33,19 +33,24 @@ ACTIONS = {
         'folder': 'img-especifica'
     },
     'sendimg-normal': {
-        'file': 'AgADAQADuacxG7k8kEbFWluhXn2dkzuB3i8ABC0Q9YqWNbv7dIcBAAEC'
+        'path': 'assets/img-especifica/4.jpg',
+        'folder': 'img-especifica'
     },
     'sendimg-minhacara': {
-        'file': 'AgADAQADuqcxG7k8kEYJ5fl-BC5KZDGD3i8ABBBq7ktLrUN7qoABAAEC'
+        'path': 'assets/img-especifica/3.jpg',
+        'folder': 'img-especifica'
     },
     'sendimg-tetas': {
-        'file': 'AgADAQADu6cxG7k8kEZ_oTQhe3CUQHZc9y8ABKDiw_0aTld518YAAgI'
+        'path': 'assets/img-especifica/1.jpg',
+        'folder': 'img-especifica'
     },
     'sendimg-gatinha': {
-        'file': 'AgADAQADvKcxG7k8kEYLIJt_f-M7U2uf3i8ABFY5mZcB2PtEiC8BAAEC'
+        'path': 'assets/img-especifica/5.jpg',
+        'folder': 'img-especifica'
     },
     'sendimg-nerd': {
-        'file': 'AgADAQADvacxG7k8kEb98e8T7incuu2X3i8ABGtWWxXUvoyqGzEBAAEC'
+        'path': 'assets/img-especifica/6.jpg',
+        'folder': 'img-especifica'
     },
     'meme-piada': {
         'file': 'assets/meme/1.png'

@@ -1,13 +1,17 @@
 import random
+from typing import Tuple
 from src.data_layer import DataLayer
 from src.utils.log import logger
 from src.utils.clear import Clear
 from src.brain import Brain
 from src.interfaces import IntegrationBot
 from src.utils import actions
+from src.utils.typings import IUser, IServer
 
 
 class Command:
+    """ Command """
+
     def __init__(self, data_layer: DataLayer, brain: Brain):
         self.data_layer = data_layer
         self.brain = brain
@@ -18,34 +22,49 @@ class Command:
         """ Set bot instance """
         self.bot = bot
 
+    def start(self,):
+        return "Oii, Meu nome é Mia e eu estou aqui para conversar! Bora bater um papo cabeça"
+
+    def status(self, user: IUser):
+        points, humor = self.data_layer.get_status(user)
+        message = '🌸 Pontos: {}\n🌸 Humor: {}'.format(points, humor)
+        return message
+
+    def history(self, user: IUser):
+        """ Get history of user """
+        history = self.data_layer.get_history(user)
+        message = '📂 Historico de pontos 📂\n'
+        for i in history:
+            message += '🔖 {} - {} ponto\n'.format(i.frase, i.humor)
+        return message
+
     def execute(self, command):
-        if command == "start":
-            return "Oii, Meu nome é Mia e eu estou aqui para conversar! Bora bater um papo cabeça"
+        """ Execute command """
+        return
 
-        elif command == "info":
-            return "Eu sou a Mia, uma inteligência artificial criada para conversar com vocês."
-
-    async def thinking(self, msg, user_id, user_name, user_username, reply_id, server_id, server_name):
+    async def thinking(self, msg, user: IUser, reply_id, server: IServer, force=False):
         """ Process message """
 
-        self.data_layer.check_exist_user(user_id, user_name, user_username)
+        self.data_layer.check_exist_user(user)
 
-        if server_id is not None:
-            if not self.data_layer.check_exist_user_group(user_id, server_id):
+        if server.serve_id is not None:
+            if not self.data_layer.check_exist_user_group(user.user_id, server.serve_id):
                 logger.info("Novo usuário no grupo")
-                message = self.data_layer.welcome_message(user_id, user_name, user_username, server_id, server_name)
-                await self.bot.send_message(server_id, message)
+                message = self.data_layer.welcome_message(user, server)
+                await self.bot.send_message(server.serve_id, message)
+                return
 
-        if self.utils.check_name_bot(msg):
-            await self.bot.send_action(server_id)
+        if self.utils.check_name_bot(msg) or force:
+            await self.bot.send_action(server.serve_id)
 
-            self.data_layer.server_active(server_id, server_name)
+            self.data_layer.server_active(server)
 
-            if self.data_layer.last_message(user_id, msg, user_username, user_name):
-                await self.bot.send_message(server_id, "🌸 Oii, eu sou a Mia, e estou aqui para conversar! Bora bater um papo cabeça 🌸")
+            if self.data_layer.last_message(user, msg):
+                await self.bot.send_message(server.serve_id, "Pare de me mandar a mesma mensagem, eu não sou burra!")
+                return
 
             first_message = True
-            response_ai = self.brain.chat(msg, user_id)
+            response_ai = self.brain.chat(msg, user.user_id)
             logger.info("Response AI: %s", response_ai)
 
             for sentence in response_ai.split("#"):
@@ -59,18 +78,18 @@ class Command:
                             file = open(action['path'], 'rb')
 
                         if 'private' in action:
-                            await self.bot.send_photo(user_id, file)
+                            await self.bot.send_photo(user.user_id, file)
                         else:
-                            await self.bot.send_photo(server_id, file)
+                            await self.bot.send_photo(server.serve_id, file)
 
                     elif 'file' in action:
-                        await self.bot.send_photo(server_id, action['file'])
+                        await self.bot.send_photo(server.serve_id, action['file'])
 
                 else:
                     if first_message:
-                        await self.bot.send_reply(server_id, sentence, reply_id)
+                        await self.bot.send_reply(server.serve_id, sentence, reply_id)
                         first_message = False
                     else:
-                        await self.bot.send_message(server_id, sentence)
+                        await self.bot.send_message(server.serve_id, sentence)
 
             return

@@ -5,6 +5,7 @@ from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandl
 
 from src.interfaces import IntegrationBot
 from src.command import Command
+from src.utils.typings import IUser, IServer
 
 
 load_dotenv()
@@ -19,13 +20,42 @@ class TelegramBot(IntegrationBot):
         self.application = Application.builder().token(self.token).build()
 
     async def start(self, update: Update, context: ContextTypes):
-        return self.commands.execute("start")
+        message = self.commands.start()
+        await update.message.reply_text(message)
 
     async def status(self, update: Update, context: ContextTypes):
-        return self.commands.execute("status")
+        user = IUser(
+            user_id=update.message.from_user.id,
+            user_nome=update.message.from_user.first_name,
+            user_username=update.message.from_user.username
+        )
+        message = self.commands.status(user)
+        await update.message.reply_text(message)
 
-    async def info(self, update: Update, context: ContextTypes):
-        return self.commands.execute("info")
+    async def info(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+        # PEGAR DADOS
+        chat = update.message.chat.type
+        chat_titulo = update.message.chat.title
+        nome_usuario = update.message.from_user.first_name
+        user_usuario = update.message.from_user.username
+        id_usuario = update.message.from_user.id
+        id_chat = update.message.chat_id
+
+        frase = 'Olá {}.\nAqui vai algumas informações sobre vc!\n\n👤 Nome: {}\n👤 User: @{}\n👤 Id: {}\n👥 Id do Grupo: {}\n👥 Chat do tipo: {}\n👥 Nome do grupo: {}\n'
+        await update.message.reply_text(frase.format(nome_usuario, nome_usuario, user_usuario, id_usuario, id_chat, chat, chat_titulo))
+
+    async def history(self, update: Update, context: ContextTypes):
+        user = IUser(
+            user_id=update.message.from_user.id,
+            user_nome=update.message.from_user.first_name,
+            user_username=update.message.from_user.username
+        )
+        response = self.commands.history(user)
+        await update.message.reply_text(response)
+
+    async def gif(self, update: Update, context: ContextTypes):
+        file = open('assets/gif/1.gif', 'rb')
+        await update.message.reply_animation(file)
 
     async def check(self, update: Update, context: ContextTypes):
         return self.commands.execute("check")
@@ -39,22 +69,30 @@ class TelegramBot(IntegrationBot):
     async def thinking(self, update: Update, context: ContextTypes):
         bot = context.bot
         message = update.message
-        reply_id = message.reply_to_message.message_id if message.reply_to_message else None
+        reply_id = message.message_id
 
         user_id = int(message.from_user.id)
         user_nome = str(message.from_user.full_name)
         user_username = str(message.from_user.username)
 
-        # is_reply_of_me = message.reply_to_message and message.reply_to_message.from_user.id == bot.id
+        is_reply_of_me: bool = message.reply_to_message and message.reply_to_message.from_user.id == bot.id
+        is_private: bool = message.chat.type == "private"
 
         try:
             serve_id = int(message.chat.id)
             serve_nome = str(message.chat.title)
-        except:
+        except Exception:
             serve_id = None
             serve_nome = None
 
-        await self.commands.thinking(message.text, user_id, user_nome, user_username, reply_id, serve_id, serve_nome)
+        user = IUser(
+            user_id=user_id,
+            user_nome=user_nome,
+            user_username=user_username
+        )
+        server = IServer(serve_id, serve_nome)
+
+        await self.commands.thinking(message.text, user, reply_id, server, is_reply_of_me or is_private)
 
     async def send_message(self, chat_id, message):
         await self.application.bot.send_message(chat_id=chat_id, text=message)
@@ -72,6 +110,8 @@ class TelegramBot(IntegrationBot):
 
         self.application.add_handler(CommandHandler("start", self.start))
         self.application.add_handler(CommandHandler("status", self.status))
+        self.application.add_handler(CommandHandler("history", self.history))
+        self.application.add_handler(CommandHandler("gif", self.gif))
         self.application.add_handler(CommandHandler("info", self.info))
         self.application.add_handler(CommandHandler("check", self.check))
         self.application.add_handler(CommandHandler("clear", self.clear))

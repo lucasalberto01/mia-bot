@@ -7,6 +7,7 @@ from src.database.model.History import History
 from src.database.model.User import User
 from src.database.model.UserActive import UserActive
 from src.database.model.UserGroup import UserGroup
+from src.utils.typings import IUser, IServer
 
 
 class DataLayer:
@@ -15,7 +16,54 @@ class DataLayer:
     def __init__(self) -> None:
         self.session = session
 
-    def check_exist_user(self, id: int, nome: str, user: str) -> bool:
+    def get_user(self, id: int):
+        """
+        Get user by id
+
+        :param id: id of user
+        :return: user
+        """
+        user = self.session.query(User).filter_by(id=id).first()
+        if not user:
+            raise Exception('User not found')
+        return user
+
+    def get_time_by_conversation(self, id: int) -> int:
+        """
+        Get time by conversation
+
+        :param id: id of user
+        :return: time of last message
+        """
+        conversation = session.query(Conversation).filter_by(id=id).first()
+        return int(conversation.tempo) + 10 if conversation else 0
+
+    def set_point(self, msg: str, id: int, point: int, emoji: str) -> None:
+        """
+        Set point of user
+
+        :param msg: message send by user
+        :param id: id of user
+        :param point: point of user
+        :param emoji: emoji of user
+        """
+
+        time_now: int = int(strftime("%Y%m%d%H%M", gmtime()))
+        user = session.query(User).filter_by(id=id).first()
+        user.pontos += point
+
+        new_history = History(
+            user_id=id,
+            frase=msg,
+            humor=emoji,
+            pontos=user.pontos,
+            tempo=time_now
+        )
+        session.add(new_history)
+        session.commit()
+        return
+
+    def check_exist_user(self, user: IUser) -> bool:
         """
         Verifica se o usuário existe no banco de dados
 
@@ -24,6 +72,9 @@ class DataLayer:
         :param user: username do usuário
         :return: True se existir, False se não existir
         """
+        id = user.user_id
+        nome = user.user_nome
+        username = user.user_username
 
         exist = self.session.query(User).filter_by(id=id).first()
         if exist:
@@ -31,7 +82,7 @@ class DataLayer:
             return False
 
         print('Nao ta no banco de dados geral')
-        new_user = User(id=id, nome=nome, user=user, humor='Neutro', pontos=0)
+        new_user = User(id=id, nome=nome, user=username, humor='Neutro', pontos=0)
         self.session.add(new_user)
         self.session.commit()
         return True
@@ -51,7 +102,7 @@ class DataLayer:
         ).first()
         return True if exist else False
 
-    def welcome_message(self, id_usuario, nome_usuario, user, id_grupo, nome_grupo):
+    def welcome_message(self, user: IUser, server: IServer) -> str:
         """
         Gera mensagem de boas vindas para o usuário depenando dos grupos que ele esta
 
@@ -62,12 +113,20 @@ class DataLayer:
         :param nome_grupo: nome do grupo
         :return: mensagem de boas vindas
         """
+
+        user_id = user.user_id
+        name = user.user_nome
+        username = user.user_username
+
+        id_grupo = server.serve_id
+        nome_grupo = server.serve_nome
+
         groups_name = []
 
         all_groups = session.query(
             UserGroup
         ).filter_by(
-            id_usuario=id_usuario
+            id_usuario=user_id
         ).all()
 
         for group in all_groups:
@@ -78,29 +137,29 @@ class DataLayer:
         if new_user:
             insert_user = UserGroup(
                 id_grupo=id_grupo,
-                id_usuario=id_usuario,
+                id_usuario=user_id,
                 nome_grupo=nome_grupo,
-                nome_usuario=nome_usuario,
-                user_usuario=user
+                nome_usuario=name,
+                user_usuario=username
             )
             session.add(insert_user)
             session.commit()
 
         if new_user:
-            return 'Oii {} eu nunca te conheci.\nBora conversar'.format(nome_usuario)
+            return 'Oii {} eu nunca te conheci.\nBora conversar'.format(name)
 
         else:
             insert_user = UserGroup(
                 id_grupo=id_grupo,
-                id_usuario=id_usuario,
+                id_usuario=user_id,
                 nome_grupo=nome_grupo,
-                nome_usuario=nome_usuario,
-                user_usuario=user
+                nome_usuario=name,
+                user_usuario=username
             )
             session.add(insert_user)
             session.commit()
             groups_names = ' e '.join(groups_name)
-            return 'Olá {}. Eu sempre te vejo no grupo {}.\nE ai, ta tudo bem ?'.format(nome_usuario, groups_names)
+            return 'Olá {}. Eu sempre te vejo no grupo {}.\nE ai, ta tudo bem ?'.format(name, groups_names)
 
     def update_mood(self, user_id) -> None:
         """
@@ -146,7 +205,7 @@ class DataLayer:
         session.commit()
         return
 
-    def last_message(self, use_id: int, msg: str, username: str, name: str) -> bool:
+    def last_message(self, user: IUser, msg: str) -> bool:
         """
         Check if last message is equal to current message
 
@@ -157,14 +216,17 @@ class DataLayer:
 
         """
         tempo = strftime("%Y%m%d%H%M", gmtime())
+        user_id = user.user_id
+        username = user.user_username
+        name = user.user_nome
 
-        user = session.query(Conversation).filter_by(id=use_id).first()
+        user = session.query(Conversation).filter_by(id=user_id).first()
 
         if user:
             last_msg = user.fala
 
             if last_msg == msg:
-                self.remove_point(use_id, msg)
+                self.remove_point(user_id, msg)
                 return True
             else:
                 user.fala = msg
@@ -172,7 +234,7 @@ class DataLayer:
                 return False
         else:
             new_user = Conversation(
-                id=use_id,
+                id=user_id,
                 nome=name,
                 user=username,
                 fala=msg,
@@ -182,7 +244,7 @@ class DataLayer:
             session.commit()
             return False
 
-    def server_active(self, groupId: int, groupName: str):
+    def server_active(self, server: IServer) -> None:
         """
         Users recently active in group
 
@@ -190,6 +252,9 @@ class DataLayer:
         :param groupName: name of group
 
         """
+        groupId = server.serve_id
+        groupName = server.serve_nome
+
         if groupId != None and groupName != None:
             tempo = strftime("%Y%m%d%H%M%S", gmtime())
             group = session.query(UserActive).filter_by(id=groupId).first()
@@ -206,3 +271,23 @@ class DataLayer:
             else:
                 group.tempo = tempo
                 session.commit()
+
+    def get_status(self, user: IUser) -> tuple[int, str]:
+        """
+        Get status of user
+
+        :param user: user
+        :return: points and mood of user
+        """
+        user = session.query(User).filter_by(id=user.user_id).first()
+        return user.pontos, user.humor
+
+    def get_history(self, user: IUser) -> list[History]:
+        """
+        Get history of user
+
+        :param user: user
+        :return: history of user
+        """
+        user = session.query(History).filter_by(user_id=user.user_id).all()
+        return user
