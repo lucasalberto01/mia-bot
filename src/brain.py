@@ -1,12 +1,14 @@
-import aiml
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 from unicodedata import normalize
 from time import gmtime, strftime
 
 from sqlalchemy import update
-from database.engine import session
-from database.model.Conversation import Conversation
-from database.model.User import User
-from database.model.History import History
+from src.database.connect import session
+from src.database.model.User import User
+from src.database.model.History import History
+from src.database.model.Conversation import Conversation
+import src.libs.aiml as aiml
 
 
 class Brain:
@@ -42,7 +44,7 @@ class Brain:
 
     def getTimeByConversation(self, id) -> int:
         conversation = session.query(Conversation).filter_by(id=id).first()
-        return conversation.tempo + 10 if conversation else 0
+        return int(conversation.tempo) + 10 if conversation else 0
 
     def setPoint(self, msg: str, id: int, point: int, emoji: str) -> None:
         time_now: int = int(strftime("%Y%m%d%H%M", gmtime()))
@@ -56,7 +58,7 @@ class Brain:
         )
 
         history = History(
-            id=id,
+            user_id=id,
             frase=msg,
             humor=emoji,
             pontos=point,

@@ -1,3 +1,15 @@
 {
-  "python.linting.enabled": true
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.languageServer": "Pylance",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.formatOnSave": true
+  },
+  "python.formatting.provider": "none",
+  "python.formatting.autopep8Args": [
+    "--max-line-length",
+    "180",
+    "--experimental"
+  ]
 }

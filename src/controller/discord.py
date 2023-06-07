@@ -1,18 +1,13 @@
 import discord
 from discord.ext import commands
-import random
 
-from cerebro import *
+from brain import *
 from info import *
 
-description = '''An example bot to showcase the discord.ext.commands extension
-module.
+description = "An example bot to showcase the discord.ext.commands extension module. There are a number of utility commands being showcased here."
 
-
-There are a number of utility commands being showcased here.'''
 bot = commands.Bot(command_prefix='!', description=description)
 bot.remove_command('help')
-
 
 @bot.event
 async def on_ready():
@@ -27,9 +22,9 @@ async def start(ctx):
     """Adds two numbers together."""
     await ctx.send('Olá. Me chamo Mia e to aqui para conversar contigo :3')
 
+
+
 #### HISTORICO ## COMANDO PUBLICO ####
-
-
 @bot.command(pass_context=True)
 async def historico(ctx,):
     """Adds two numbers together."""
@@ -50,9 +45,10 @@ async def historico(ctx,):
 async def teste(ctx, member: discord.Member):
     print('id ->', member.id)
 
+
+
+
 #### ZERO ### COMANDO SUDO ####
-
-
 @bot.command(pass_context=True)
 async def zero(ctx, member: discord.Member):
     """Adds two numbers together."""
@@ -80,9 +76,9 @@ async def zero(ctx, member: discord.Member):
     else:
         print('no adm')
 
+
+
 #### ZERO ### COMANDO SUDO ####
-
-
 @bot.command(pass_context=True)
 async def giff(ctx,):
     """Adds two numbers together."""
@@ -92,9 +88,9 @@ async def giff(ctx,):
     else:
         print('no adm')
 
+
+
 #### STATUS ### COMANDO PUBLICO ####
-
-
 @bot.command(pass_context=True)
 async def status(ctx,):
     ## ID -- NOME -- USER -- HUMOR -- PONTOS
@@ -129,9 +125,8 @@ async def rank(ctx,):
 
         conn.commit()
 
+
 #### STATUS ### COMANDO PUBLICO ####
-
-
 @bot.command(pass_context=True)
 async def unrank(ctx,):
     ## ID -- NOME -- USER -- HUMOR -- PONTOS
@@ -153,5 +148,8 @@ def enviar(message, aa):
     message.channel.send(aa)
 
 
-@bot.event
-bot.run('NDI4MzMwMTY4NTAzODk0MDM4.DaFYHg.aEfh8h8JkoXljoVviUleGFVXdXk')
+def run():
+    bot.run('')
+
+if __name__ == '__main__':
+    run()
