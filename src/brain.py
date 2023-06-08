@@ -11,27 +11,16 @@ class Brain:
         self.data_layer = data_layer
         self.clean = Clear()
         
+        # Load AIML files
         self.ai_neutra = aiml.Kernel()
-        self.ai_neutra.learn('brain/neutro.xml')
-        self.ai_neutra.respond('load aiml b')
-        print('\n')
-
         self.ai_fofa = aiml.Kernel()
-        self.ai_fofa.learn('brain/fofa.xml')
-        self.ai_fofa.respond('load aiml b')
-        print('\n')
-
         self.ai_irritada = aiml.Kernel()
-        self.ai_irritada.learn('brain/irritada.xml')
-        self.ai_irritada.respond('load aiml b')
-        print('\n')
-
         self.ai_sexy = aiml.Kernel()
-        self.ai_sexy.learn('brain/sexy.xml')
-        self.ai_sexy.respond('load aiml b')
-        print('\n')
+
+        self.load_brain()
 
     def response_by_mood(self, humor: str, msg: str, user_id: int) -> str:
+        print('>>>>>> Entrada: ', msg)
         response = ''
         if humor == 'Neutro':
             response = self.ai_neutra.respond(msg, user_id)
@@ -51,7 +40,7 @@ class Brain:
         return response
     
     
-    def reload_brain(self) -> None:
+    def load_brain(self) -> None:
         self.ai_neutra.resetBrain()
         self.ai_neutra.learn('brain/neutro.xml')
         self.ai_neutra.respond('load aiml b')
