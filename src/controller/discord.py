@@ -18,36 +18,45 @@ class DiscordBot(discord.Client, Command, IntegrationBot):
         print(f'Logged on as {self.user}!')
 
     async def on_message(self, message: discord.Message):
+        """ On message """
+        user = IUser(message.author.id, message.author.name, message.author.discriminator)
+        server = IServer(message.channel.id, message.channel.name)
+
         if message.author == self.user:
             return
 
         if message.content.startswith('?'):
             if message.content.startswith('?status'):
-                user = IUser(message.author.id, message.author.name, message.author.discriminator)
                 response = self.commands_bot.status(user)
                 await message.channel.send(response)
+                return
 
             if message.content.startswith('?history'):
-                user = IUser(message.author.id, message.author.name, message.author.discriminator)
                 response = self.commands_bot.history(user)
                 await message.channel.send(response)
+                return
 
-        user = IUser(message.author.id, message.author.name, message.author.discriminator)
-        server = IServer(message.channel.id, message.channel.name)
-        message = message.content
+            if message.content.startswith('?gif'):
+                response = self.commands_bot.gif()
+                file = discord.File(response, filename="file.gif")
+                await message.channel.send(file=file)
+                return
 
-        await self.commands_bot.thinking(message, user, 1, server, False)
+            if message.content.startswith('?reset'):
+                response = self.commands_bot.reset()
+                await message.channel.send(response)
+                return
+
+        await self.commands_bot.thinking(message.content, user, message.id, server, False)
 
     async def send_message(self, chat_id, message):
         """ Send message """
-        print("send_message")
-        print(chat_id)
-        channel = self.get_channel(chat_id)
-        await channel.send(message)
+        await self.get_channel(chat_id).send(message)
 
     async def send_reply(self, chat_id, message, reply_message_id):
         """ Send reply message """
-        await self.get_channel(chat_id).send(message)
+        reference = await self.get_channel(chat_id).fetch_message(reply_message_id)
+        await self.get_channel(chat_id).send(message, reference=reference)
 
     async def send_photo(self, chat_id, photo, message=None):
         """ Send photo """

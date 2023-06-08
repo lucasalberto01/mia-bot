@@ -235,11 +235,11 @@
     <category>
         <pattern>MOZAO</pattern>
         <template>
-        <random>
-        <li>Tu ta muito carente em#Precisa de uma namorada#Ou uma punheda XD</li>
-        <li>Tu ta muito carente em#Precisa de uma namorada</li>
-        <li>kkkkkkk ta carente?</li>
-        </random>
+            <random>
+                <li>Tu ta muito carente em#Precisa de uma namorada#Ou uma punheda XD</li>
+                <li>Tu ta muito carente em#Precisa de uma namorada</li>
+                <li>kkkkkkk ta carente?</li>
+            </random>
         </template>
     </category>
 

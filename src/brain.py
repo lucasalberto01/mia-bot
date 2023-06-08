@@ -31,46 +31,54 @@ class Brain:
         self.ai_sexy.respond('load aiml b')
         print('\n')
 
-    def responseByHumor(self, humor: str, msg: str, id: int) -> str:
+    def response_by_mood(self, humor: str, msg: str, user_id: int) -> str:
         response = ''
         if humor == 'Neutro':
-            response = self.ai_neutra.respond(msg, id)
+            response = self.ai_neutra.respond(msg, user_id)
 
         elif humor == 'Fofa':
-            response = self.ai_fofa.respond(msg, id)
+            response = self.ai_fofa.respond(msg, user_id)
 
         elif humor == 'Puta':
-            response = self.ai_puta.respond(msg, id)
+            response = self.ai_puta.respond(msg, user_id)
 
         elif humor == 'Sexy':
-            response = self.ai_sexy.respond(msg, id)
+            response = self.ai_sexy.respond(msg, user_id)
 
         elif humor == 'Block':
             response = 'Vc está permanentemente bloqueado pela bot por **mau comportamento**.\n\nEntre em contato com os desenvolvedores pelo link na descrição do bot para reverter a situação'
 
         return response
+    
+    
+    def reload_brain(self) -> None:
+        self.ai_neutra.resetBrain()
+        self.ai_neutra.learn('brain/neutro.xml')
+        self.ai_neutra.respond('load aiml b')
+        self.ai_fofa.resetBrain()
+        self.ai_fofa.learn('brain/fofa.xml')
+        self.ai_fofa.respond('load aiml b')
+        self.ai_puta.resetBrain()
+        self.ai_puta.learn('brain/puta.xml')
+        self.ai_puta.respond('load aiml b')
+        self.ai_sexy.resetBrain()
+        self.ai_sexy.learn('brain/sexy.xml')
+        self.ai_sexy.respond('load aiml b')
+        return
 
-    def chat(self, msg: str, id: int):
-        response = ''
-        msg1 = self.clean.normalize_message(msg)
-        user = self.data_layer.get_user(id)
+    def chat(self, message: str, user_id: int):
+        message = self.clean.normalize_message(message)
         
-        print('User: H: {}, PL {}', user.humor, user.pontos)
-        print('Input of AI->', msg1)
+        user = self.data_layer.get_user(user_id)
         
-        response = self.responseByHumor(user.humor, msg1, id)
+        response = self.response_by_mood(user.humor, message, user_id)
         
-        print('Output of AI->', response)
-
         time_now = int(strftime("%Y%m%d%H%M", gmtime()))
-        time_last = self.data_layer.get_time_by_conversation(id)
+        time_last = self.data_layer.get_time_by_conversation(user_id)
 
         final = ''
         pontos = user.pontos
         events = response.split('§')
-
-        print(time_now)
-        print(time_last)
 
         for event in events:
             if time_now > time_last:
@@ -78,21 +86,21 @@ class Brain:
                     pontos2 = pontos + 1
                     print('adicionar um ponto')
                     final = '#Ganhou um pontinho cmg 😝'
-                    self.data_layer.set_point(msg, id, pontos2, '➕')
+                    self.data_layer.set_point(message, user_id, pontos2, '➕')
                     
                 elif event == 'addpoint-s':
                     pontos2 = pontos + 1
-                    self.data_layer.set_point(msg, id, pontos2, '➕')
+                    self.data_layer.set_point(message, user_id, pontos2, '➕')
 
                 elif event == 'removepoint':
                     pontos2 = pontos - 1
                     print('remover um ponto')
                     final = '#Perdeu um ponto cmg 😥'
-                    self.data_layer.set_point(msg, id, pontos2, '➖')
+                    self.data_layer.set_point(message, user_id, pontos2, '➖')
 
                 elif event == 'removepoint-s':
                     pontos2 = pontos - 1
                     print('remover um ponto')
-                    self.data_layer.set_point(msg, id, pontos2, '➖')
+                    self.data_layer.set_point(message, user_id, pontos2, '➖')
 
         return events[0] + final

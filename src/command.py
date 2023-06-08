@@ -1,5 +1,4 @@
 import random
-from typing import Tuple
 from src.data_layer import DataLayer
 from src.utils.log import logger
 from src.utils.clear import Clear
@@ -22,6 +21,8 @@ class Command:
         """ Set bot instance """
         self.bot = bot
 
+    ## COMMANDS ##
+
     def start(self,):
         return "Oii, Meu nome é Mia e eu estou aqui para conversar! Bora bater um papo cabeça"
 
@@ -38,11 +39,17 @@ class Command:
             message += '🔖 {} - {} ponto\n'.format(i.frase, i.humor)
         return message
 
-    def execute(self, command):
-        """ Execute command """
-        return
+    def gif(self,):
+        file = open('assets/gif/1.gif', 'rb')
+        return file
 
-    async def thinking(self, msg, user: IUser, reply_id, server: IServer, force=False):
+    def reset(self,):
+        self.brain.reload_brain()
+        return "Resetado"
+
+    ## ALL TEXTO MESSAGE ##
+
+    async def thinking(self, msg: str, user: IUser, reply_id: int, server: IServer, force=False):
         """ Process message """
 
         self.data_layer.check_exist_user(user)
