@@ -622,5 +622,15 @@
             </random>
         </template>
     </category>
+
+    <category>
+        <pattern> * SEMPRE AQUI</pattern>
+        <template>
+            <random>
+                <li>Sim, gosto do pessoal</li>
+                <li>Sim!#O pessoal do grupo é gente boa</li>
+            </random>
+        </template>
+    </category>
     
 </aiml>

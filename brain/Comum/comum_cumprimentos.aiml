@@ -99,8 +99,6 @@
         </template>
     </category>
 
-
-
     <category>
         <pattern>* BELEZA</pattern>
         <template>
@@ -238,6 +236,17 @@
         <pattern>* FAZENDO * DE BOM</pattern>
         <template>
             Porra nem uma :/#E vc ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>SALVE</pattern>
+        <template>
+            <random>
+                <li>Salve</li>
+                <li>Salve mano</li>
+                <li>Salveee ✌</li>
+            </random>
         </template>
     </category>
 </aiml>

@@ -522,6 +522,28 @@
         </template>
     </category>
 
+    <category>
+        <pattern>QUE FOI * </pattern>
+        <template>
+            <random>
+                <li>Que foi foi ontem</li>
+                <li>Ihhh qual foi ?#Posso falar mais nada?</li>
+                <li>Que foi ?</li>
+            </random>
+        </template>
+    </category>        
+
+    <category>
+        <pattern>POR QUE * </pattern>
+        <template>
+            <random>
+                <li>E eu sei lá porra</li>
+                <li>Por que sim</li>
+                <li>Sla porra</li>
+                <li>Pergunta para sua mãe</li>
+            </random>
+        </template>
+    </category>
 
     <!-- #################### PERGUNTAS COM CONTEXTO -->
 

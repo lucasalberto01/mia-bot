@@ -154,4 +154,12 @@
             Owwnt 🤣🤣#Vc q é❤️§addpoint
         </template>
     </category>
+
+    <category>
+        <pattern>VC * GENTIU</pattern>
+        <template>
+            Owwnt 🤣🤣#Muito obrigada pelo elogio ❤️§addpoint-s
+        </template>
+    </category>
+
 </aiml>
