@@ -42,12 +42,14 @@ class DiscordBot(discord.Client, Command, IntegrationBot):
                 await message.channel.send(file=file)
                 return
 
-            if message.content.startswith('?reset'):
-                response = self.commands_bot.reset()
+            if message.content.startswith('?reload'):
+                response = self.commands_bot.reload()
                 await message.channel.send(response)
                 return
 
-        await self.commands_bot.thinking(message.content, user, message.id, server, False)
+        is_response_of_me = message.reference is not None and message.reference.resolved.author == self.user
+
+        await self.commands_bot.thinking(message.content, user, message.id, server, is_response_of_me)
 
     async def send_message(self, chat_id, message):
         """ Send message """

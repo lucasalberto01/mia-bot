@@ -43,9 +43,9 @@ class Command:
         file = open('assets/gif/1.gif', 'rb')
         return file
 
-    def reset(self,):
-        self.brain.reload_brain()
-        return "Resetado"
+    def reload(self,):
+        self.brain.load_brain()
+        return "Brain Reloaded!"
 
     ## ALL TEXTO MESSAGE ##
 
