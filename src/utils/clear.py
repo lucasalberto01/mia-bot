@@ -27,7 +27,9 @@ class Clear:
 
         replacements = {
             ' voce': ' vc',
+            'mia ': '',
             ' mia ': '',
+            ' mia': '',
             ' nudez': ' nude',
             ' privado': ' pv',
             ' pvd': ' pv',
