@@ -10,13 +10,14 @@ A mia é 100% baseada em AIML e tem sua própria implementação.
 
 O banco de dados dela é um simples sqlite, e feito assim para evitar complexidades desnecessária
 
-### Recursos principais:
+### Recursos principais
 
 * Personalização de interações: O bot possui a capacidade de responder de forma personalizada a cada pessoa, levando em consideração o tratamento que recebe individualmente.
 * Detecção de emoções: O bot é capaz de reconhecer e interpretar emoções em mensagens e interações, permitindo uma resposta mais adequada e empática.
 * Código aberto: Este projeto é de código aberto, permitindo que a comunidade contribua com melhorias, correções e recursos adicionais.
 
 ### Plataformas suportadas
+
 * Discord
 * Telegram
 
@@ -26,4 +27,5 @@ O projeto está aberto para contribuições, e qualquer um é super bem vindo �
 
 ### Acknowledgments
 
-- AIML (<https://pt.wikipedia.org/wiki/AIML>)
+* AIML (<https://pt.wikipedia.org/wiki/AIML>)
+* Python-aiml (<https://github.com/paulovn/python-aiml>)

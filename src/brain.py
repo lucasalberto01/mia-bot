@@ -3,7 +3,7 @@
 from time import gmtime, strftime
 from src.data_layer import DataLayer
 from src.utils.clear import Clear
-from src.libs import aiml
+from libs import aiml
 
 
 class Brain:
@@ -21,9 +21,9 @@ class Brain:
         self.ai_fofa.respond('load aiml b')
         print('\n')
 
-        self.ai_puta = aiml.Kernel()
-        self.ai_puta.learn('brain/puta.xml')
-        self.ai_puta.respond('load aiml b')
+        self.ai_irritada = aiml.Kernel()
+        self.ai_irritada.learn('brain/irritada.xml')
+        self.ai_irritada.respond('load aiml b')
         print('\n')
 
         self.ai_sexy = aiml.Kernel()
@@ -39,8 +39,8 @@ class Brain:
         elif humor == 'Fofa':
             response = self.ai_fofa.respond(msg, user_id)
 
-        elif humor == 'Puta':
-            response = self.ai_puta.respond(msg, user_id)
+        elif humor == 'Irritada':
+            response = self.ai_irritada.respond(msg, user_id)
 
         elif humor == 'Sexy':
             response = self.ai_sexy.respond(msg, user_id)
@@ -58,9 +58,9 @@ class Brain:
         self.ai_fofa.resetBrain()
         self.ai_fofa.learn('brain/fofa.xml')
         self.ai_fofa.respond('load aiml b')
-        self.ai_puta.resetBrain()
-        self.ai_puta.learn('brain/puta.xml')
-        self.ai_puta.respond('load aiml b')
+        self.ai_irritada.resetBrain()
+        self.ai_irritada.learn('brain/irritada.xml')
+        self.ai_irritada.respond('load aiml b')
         self.ai_sexy.resetBrain()
         self.ai_sexy.learn('brain/sexy.xml')
         self.ai_sexy.respond('load aiml b')
