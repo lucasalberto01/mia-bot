@@ -1,5 +1,9 @@
 # Mia Robot (My Intelligence Artificial)
 
+<p align="center">
+  <img width="460" height="auto" src="https://github.com/lucasalberto01/mia-bot/assets/29151352/e7914bdb-f0ab-46a0-bea0-7fc5a16567df">
+</p>
+
 > Descrição em português pos a AIML é em português
 
 Este repositório contém um bot projetado para proporcionar interações mais humanas em plataformas de redes sociais. O objetivo principal do bot é imitar comportamentos humanos, adaptando-se de forma única a cada indivíduo com base em como são tratados.
