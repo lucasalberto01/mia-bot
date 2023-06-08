@@ -17,7 +17,7 @@ class TelegramBot(IntegrationBot):
     def __init__(self, commands: Command):
         self.token = os.getenv("TOKEN_TELEGRAM")
         self.commands = commands
-        self.application = Application.builder().token(self.token).build()
+        self.application = None
 
     ### COMMANDS ###
     async def start(self, update: Update, context: ContextTypes):
@@ -102,8 +102,8 @@ class TelegramBot(IntegrationBot):
     async def send_action(self, chat_id):
         await self.application.bot.send_chat_action(chat_id=chat_id, action="typing")
 
-    def running(self):
-
+    def run(self, token: str):
+        self.application = Application.builder().token(token).build()
         self.application.add_handler(CommandHandler("start", self.start))
         self.application.add_handler(CommandHandler("status", self.status))
         self.application.add_handler(CommandHandler("history", self.history))

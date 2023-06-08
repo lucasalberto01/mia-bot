@@ -8,7 +8,9 @@ load_dotenv()
 
 
 class DiscordBot(discord.Client, Command, IntegrationBot):
-    def __init__(self, commands_bot: Command, intents=None):
+    def __init__(self, commands_bot: Command):
+        intents = discord.Intents.default()
+        intents.message_content = True
         super().__init__(intents=intents)
         self.commands_bot = commands_bot
 

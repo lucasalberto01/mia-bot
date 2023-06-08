@@ -29,6 +29,6 @@ class IntegrationBot:
         """ Send action typing in chat """
         pass
 
-    def running(self):
+    def run(self):
         """ Running bot """
         pass
