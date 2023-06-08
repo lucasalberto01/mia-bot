@@ -1,4 +1,4 @@
-# Mia Robot (My Intelligence Artificial)
+# M.I.A (My Intelligence Artificial)
 
 <p align="center">
   <img width="460" height="auto" src="https://github.com/lucasalberto01/mia-bot/assets/29151352/e7914bdb-f0ab-46a0-bea0-7fc5a16567df">
