@@ -109,5 +109,7 @@ defaultNormal = {
     'foda-se': 'fodase',
     'fds': 'fodase',
     'nois': 'nos',
-    'comigo': 'cmg'
+    'comigo': 'cmg',
+    'vai se foder': 'vsf',
+    'vsfd': 'vsf',
 }

@@ -10,7 +10,14 @@ class IntegrationBot:
     ### COMMANDS ###
 
     async def send_message(self, chat_id, message):
-        """ Send message """
+        """ 
+        ### Send message
+
+        :param chat_id: Channel ID or User ID
+        :parm message: Message
+
+        :return: Message ID 
+        """
         pass
 
     async def send_reply(self, chat_id, message, reply_message_id):
@@ -25,6 +32,8 @@ class IntegrationBot:
         :param photo: Photo path
         :param message: Message
         :param private: Send to DM
+
+        :return: Message ID
         """
         pass
 
@@ -33,7 +42,13 @@ class IntegrationBot:
         pass
 
     async def send_action(self, chat_id):
-        """ Send action typing in chat """
+        """ 
+        ### Send action typing in chat 
+
+        :param chat_id: Channel ID or User ID
+
+        :return: Message ID
+        """
         pass
 
     def run(self):

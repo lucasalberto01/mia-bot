@@ -28,8 +28,10 @@ from __future__ import print_function
 # 'dict' objects weren't available to subclass from until version 2.2.
 # Get around this by importing UserDict.UserDict if the built-in dict
 # object isn't available.
-try: dict
-except: from UserDict import UserDict as dict
+try:
+    dict
+except:
+    from UserDict import UserDict as dict
 
 import re
 import string
@@ -38,6 +40,7 @@ try:
 except ImportError:
     from configparser import ConfigParser
 
+
 class WordSub(dict):
     """All-in-one multiple-string-substitution class."""
 
@@ -45,9 +48,9 @@ class WordSub(dict):
         """Convert a word to a regex object which matches the word."""
         if word != "" and word[0].isalpha() and word[-1].isalpha():
             return "\\b%s\\b" % re.escape(word)
-        else: 
+        else:
             return r"\b%s\b" % re.escape(word)
-    
+
     def _update_regex(self):
         """Build re object based on the keys of the current
         dictionary.
@@ -56,14 +59,14 @@ class WordSub(dict):
         self._regex = re.compile("|".join(map(self._wordToRegex, self.keys())))
         self._regexIsDirty = False
 
-    def __init__(self, defaults = {}):
+    def __init__(self, defaults={}):
         """Initialize the object, and populate it with the entries in
         the defaults dictionary.
 
         """
         self._regex = None
         self._regexIsDirty = True
-        for k,v in defaults.items():
+        for k, v in defaults.items():
             self[k] = v
 
     def __call__(self, match):
@@ -73,13 +76,12 @@ class WordSub(dict):
     def __setitem__(self, i, y):
         self._regexIsDirty = True
         # for each entry the user adds, we actually add three entrys:
-        super(type(self),self).__setitem__(i.lower(),y.lower()) # key = value
-        super(type(self),self).__setitem__(string.capwords(i), string.capwords(y)) # Key = Value
-        super(type(self),self).__setitem__(i.upper(), y.upper()) # KEY = VALUE
+        super(type(self), self).__setitem__(i.lower(), y.lower())  # key = value
+        super(type(self), self).__setitem__(string.capwords(i), string.capwords(y))  # Key = Value
+        super(type(self), self).__setitem__(i.upper(), y.upper())  # KEY = VALUE
 
     def sub(self, text):
         """Translate text, returns the modified text."""
         if self._regexIsDirty:
             self._update_regex()
         return self._regex.sub(self, text)
-

@@ -21,4 +21,14 @@ class Clear:
         """
         Normalize message
         """
-        return normalize('NFKD', message).encode('ASCII', 'ignore').decode('ASCII').lower()
+        # Remove accents
+        message = normalize('NFKD', message).encode('ASCII', 'ignore').decode('ASCII').lower()
+
+        # Remove name of bot
+        if self.check_name_bot(message):
+            message = message.replace("mia", "")
+
+        # Remove multiple spaces
+        message = " ".join(message.split())
+
+        return message

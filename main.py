@@ -36,4 +36,8 @@ class Application:
 
 
 if __name__ == "__main__":
-    Application().run()
+    app = Application()
+    try:
+        app.run()
+    except KeyboardInterrupt:
+        print("Bye")
