@@ -13,9 +13,13 @@ class Brain:
         
         # Load AIML files
         self.ai_neutra = aiml.Kernel()
+        self.ai_neutra.setPredicate('name', 'Mia')
         self.ai_fofa = aiml.Kernel()
+        self.ai_fofa.setPredicate('name', 'Mia')
         self.ai_irritada = aiml.Kernel()
+        self.ai_irritada.setPredicate('name', 'Mia')
         self.ai_sexy = aiml.Kernel()
+        self.ai_sexy.setPredicate('name', 'Mia')
 
         self.load_brain()
 
