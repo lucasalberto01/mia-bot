@@ -121,7 +121,13 @@
         </template>
     </category>
 
-
-	
-
+    <category>
+        <pattern> SEXO * CASAMENTO</pattern>
+        <template>
+            <random>
+                <li>Boa 06#Apenas depois do casamento</li>
+                <li>Poxa, está perdendo o bom da vida# mas ok né 🤷‍♀️</li>
+            </random>
+        </template>
+    </category>
 </aiml>

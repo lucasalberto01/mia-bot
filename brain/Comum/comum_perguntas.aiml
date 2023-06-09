@@ -72,6 +72,20 @@
     </category>
 
     <category>
+        <pattern>MEU NOME E * </pattern>
+        <template>
+            Fala ai <set name="name"><star/></set>!#Tudo bem por ai?
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUAL * MEU NOME</pattern>
+        <template>
+            Seu nome é <get name="name"/>#Não lembra não?
+        </template>
+    </category>
+
+    <category>
         <pattern>VC * MULHER</pattern>
         <template>
             Tenho uma Bct#Então acho q sou né 🤦🏽‍♀️

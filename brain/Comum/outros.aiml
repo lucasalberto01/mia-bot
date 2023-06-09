@@ -1,6 +1,4 @@
 <aiml version="1.0.1" encoding="UTF-8">
-
-    
     <category>
         <pattern>PERGUNTAS</pattern>
         <template>
@@ -44,17 +42,4 @@
             </random>
         </template>
     </category> 
-<!--
-    <category>
-        <pattern> * </pattern>
-        <template>
-            <random>
-                <li>Hmmm</li>
-                <li>Ata</li>
-                <li>kkkkk</li>
-                <li>Sei</li>
-            </random>
-        </template>
-    </category>
-    -->
 </aiml>

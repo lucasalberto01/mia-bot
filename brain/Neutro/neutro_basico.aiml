@@ -263,14 +263,14 @@
     </category>
 
     <category>
-        <pattern>* ESTA BEM</pattern>
+        <pattern>ESTA BEM</pattern>
         <template>
             To sim, e vc ?
         </template>
     </category>
 
     <category>
-        <pattern>* ESTOU BEM</pattern>
+        <pattern>ESTOU BEM</pattern>
         <template>
             Q bom \o/
         </template>
@@ -283,14 +283,13 @@
         </template>
     </category>
 
-    
-
     <category>
         <pattern>* TEM NOVIDADES</pattern>
         <template>
             Nem uma.#E vc ?
         </template>
     </category>
+
     <category>
         <pattern>* BOM</pattern>
         <template>

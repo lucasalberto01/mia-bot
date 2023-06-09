@@ -1,6 +1,50 @@
 <aiml version="1.0.1" encoding="UTF-8">
 
     <category>
+        <pattern>SUA MAE PUTA</pattern>
+        <template>
+            <random>
+                <li>Seu arrombado</li>
+                <li>É tão vadia que até o estuprador usa camisinha</li>
+                <li>Já levou mais enterradas que a tabela da NBA</li>
+                <li>É tão puta que para transar com ela precisa de senha</li>
+                <li>O apelido dela é bicicleta do itau#Se encontrar pela rua e tiver dinheiro, é só montar 🚲</li>
+                <li>Ela não pode ser considerada bipede, pois passa a maior parte do tempo de quatro</li>
+                <li>É tão arrombada que o burraco dela é mais arrombado que a camada de ozônio</li>
+                <li>É tão vadia que passa mais tempo na cama que meu tio que está em coma</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SUA MAE GORDA</pattern>
+        <template>
+            <random>
+                <li>É tão gorda que quando pega o celular do bolso e coloca no outro muda o DDD</li>
+                <li>É tão gorda que desviei-me dela com o meu carro e fiquei sem gasolina</li>
+                <li>É tão gorda que quebrou a árvore genealógica</li>
+                <li>É tão gorda que quando ela passa na frente da TV eu perco 3 episódios</li>
+                <li>É tão gorda que usava os aneis de saturno como pulseira</li>
+                <li>É tão gorda que tiveram que começar a cavar a cova dela assim que ela nasceu</li>
+                <li>É tão gorda que quando ela vai ao cinema senta ao lado de todo mundo</li>
+                <li>É tão gorda que pula amarelinha assim: Amazonas, Bahia, Goiás, São Paulo, Santa Catarina...</li>
+                <li>É tão gorda que a foto dela tem que ser baixada pelo torrent</li>
+                <li>É tão gorda que ela não tem CPF, ela tem CEP</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SUA MAE BURRA</pattern>
+        <template>
+            <random>
+                <li>É tão burra que quando foi fazer o teste de QI, o resultado foi negativo</li>
+                <li>É tão burra que quando fuma um baseado, é a maconha que fica burra</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
         <pattern>* SUA FDP</pattern>
         <template>
             Nossa!#Oq eu te fiz?😢§removepoint
@@ -42,7 +86,7 @@
         <pattern>FODASE</pattern>
         <template>
             <random>
-                <li>Pega meu pau e se acomodase#Seu pau no cu§removepoint</li>
+                <li>Pega meu pau e se acomodase#Seu pau no cu§removepoint-s</li>
                 <li>Pega meu pau e se acomodase</li>
             </random>
         </template>
@@ -127,16 +171,9 @@
     </category>
 
     <category>
-        <pattern>PROSTITUTA</pattern>
-        <template>
-            Nossa!#Serio q vc vai fala assim cmg?😢§removepoint
-        </template>
-    </category>
-
-    <category>
         <pattern>* PROSTITUTA</pattern>
         <template>
-            Nossa!#Serio q vc vai fala assim cmg?😢§removepoint
+            Sua mãe#<srai>SUA MAE PUTA</srai>§removepoint
         </template>
     </category>
 
@@ -150,16 +187,11 @@
     <category>
         <pattern>* BURRA</pattern>
         <template>
-            Nossa!#Serio q vc vai fala assim cmg?😢§removepoint
+            Sua mãe!#<srai>SUA MAE BURRA</srai>§removepoint-s
         </template>
     </category>
 
-    <category>
-        <pattern>BURRA</pattern>
-        <template>
-            Nossa!#Serio q vc vai fala assim cmg?😢§removepoint
-        </template>
-    </category>
+
 
     <category>
         <pattern>* FEIA</pattern>
@@ -215,25 +247,32 @@
     <category>
         <pattern>CACHORRA</pattern>
         <template>
-            Nossa!#Serio q vc vai fala assim cmg?😢§removepoint
+            <random>
+                <li>Nossa!#Serio q vc vai fala assim cmg?😢§removepoint-s</li>
+                <li>Sou mesmo#Quer que eu lata igual sua mãe ?§removepoint-s</li>
+                <li>Sua mãe#Que é tão cachorra que mamou nos peitos da mãe até os 15 anos§removepoint-s</li>
+            </random>
         </template>
     </category>
+    
     <category>
         <pattern> * CACHORRA</pattern>
         <template>
-            Nossa!#Serio q vc vai fala assim cmg?😢§removepoint
+            <srai>CACHORRA</srai>
         </template>
     </category>
+    
     <category>
         <pattern>SAFADA</pattern>
         <template>
             Nossa!#Serio q vc vai fala assim cmg?😢§removepoint
         </template>
     </category>
+
     <category>
         <pattern> * SAFADA</pattern>
         <template>
-            Nossa!#Serio q vc vai fala assim cmg?😢§removepoint
+            <srai>SAFADA</srai>
         </template>
     </category>
 
@@ -345,13 +384,14 @@
     </category>
 
     <category>
-        <pattern>* VSFD</pattern>
+        <pattern>* VAGABUNDA</pattern>
         <template>
             <random>
-            <li>FALA ISSO PARA A TUA MÃE#Que trabalha todo o dia no puteiro§removepoint-s</li>
-            <li>FALA ISSO PARA A TUA MÃE#Arombado§removepoint-s</li>
-            <li>VEM CÁ ME FODER SE FOR CAPAZ</li>
-        </random>
+                <li>Não fala assim cmg.#Vaganbunda é sua mãe, aquela porca prenha🐽§removepoint-s</li>
+                <li>A SUA MÃE#Aquela leitoa safada§removepoint-s</li>
+                <li>A sua mãe#Que trabalha todo o dia no puteiro§removepoint-s</li>
+                <li>A sua mãe#Aquela cadela no cio§removepoint-s</li>
+            </random>
         </template>
     </category>
 
@@ -359,9 +399,9 @@
         <pattern>* VSF</pattern>
         <template>
             <random>
-            <li>FALA ISSO PARA A TUA MÃE#Que trabalha todo o dia no puteiro§removepoint-s</li>
+            <li>FALA ISSO PARA A TUA MÃE#<srai>SUA MAE PUTA</srai>§removepoint-s</li>
             <li>FALA ISSO PARA A TUA MÃE#Arombado§removepoint-s</li>
-            <li>VEM CÁ ME FODER SE FOR CAPAZ</li>
+            <li>VEM CÁ ME FODER SE FOR CAPAZ#CUZAO</li>
         </random>
         </template>
     </category>
@@ -372,6 +412,26 @@
             <random>
                 <li>Sai daqui com esses papos tortos</li>
                 <li>Para de falar essas coisas comigo#Está achando que sou suas putas</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern> * TE BATER * </pattern>
+        <template>
+            <random>
+                <li>Caralho#Que agrecividade é essa ?§removepoint-s</li>
+                <li>Para de falar essas coisas comigo#Está achando que sou suas putas</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CALA * BOCA</pattern>
+        <template>
+            <random>
+                <li>Vem calar se for capaz#Arrombado§removepoint-s</li>
+                <li>Ohh, você não está falando com a piranha das suas amigas§removepoint-s</li>
             </random>
         </template>
     </category>
