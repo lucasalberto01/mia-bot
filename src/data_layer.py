@@ -7,7 +7,7 @@ from src.database.model.History import History
 from src.database.model.User import User
 from src.database.model.UserActive import UserActive
 from src.database.model.UserGroup import UserGroup
-from src.utils.typings import IUser, IServer
+from src.utils.typings import IUser, IChannel
 
 
 class DataLayer:
@@ -102,7 +102,7 @@ class DataLayer:
         ).first()
         return True if exist else False
 
-    def welcome_message(self, user: IUser, server: IServer) -> str:
+    def welcome_message(self, user: IUser, server: IChannel) -> str:
         """
         Gera mensagem de boas vindas para o usuário depenando dos grupos que ele esta
 
@@ -244,7 +244,7 @@ class DataLayer:
             session.commit()
             return False
 
-    def server_active(self, server: IServer) -> None:
+    def server_active(self, server: IChannel) -> None:
         """
         Users recently active in group
 

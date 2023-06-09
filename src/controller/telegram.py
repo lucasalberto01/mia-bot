@@ -5,7 +5,7 @@ from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandl
 
 from src.interfaces import IntegrationBot
 from src.command import Command
-from src.utils.typings import IUser, IServer
+from src.utils.typings import IUser, IChannel
 
 
 load_dotenv()
@@ -82,7 +82,7 @@ class TelegramBot(IntegrationBot):
             user_nome=user_nome,
             user_username=user_username
         )
-        server = IServer(serve_id, serve_nome)
+        server = IChannel(serve_id, serve_nome, serve_id, serve_nome)
 
         await self.commands.thinking(message.text, user, reply_id, server, is_reply_of_me or is_private)
 

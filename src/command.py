@@ -5,7 +5,7 @@ from src.utils.clear import Clear
 from src.brain import Brain
 from src.interfaces import IntegrationBot
 from src.utils import actions
-from src.utils.typings import IUser, IServer
+from src.utils.typings import IUser, IChannel
 
 
 class Command:
@@ -24,9 +24,11 @@ class Command:
     ## COMMANDS ##
 
     def start(self,):
+        """ Start message """
         return "Oii, Meu nome é Mia e eu estou aqui para conversar! Bora bater um papo cabeça"
 
     def status(self, user: IUser):
+        """ Get status of user """
         points, humor = self.data_layer.get_status(user)
         message = '🌸 Pontos: {}\n🌸 Humor: {}'.format(points, humor)
         return message
@@ -40,34 +42,36 @@ class Command:
         return message
 
     def gif(self,):
+        """ send gif of test """
         file = open('assets/gif/1.gif', 'rb')
         return file
 
     def reload(self,):
+        """ Reload brain """
         self.brain.load_brain()
         return "Brain Reloaded!"
 
     ## ALL TEXTO MESSAGE ##
 
-    async def thinking(self, msg: str, user: IUser, reply_id: int, server: IServer, force=False):
-        """ Process message """
+    async def thinking(self, msg: str, user: IUser, reply_id: int, channel: IChannel, force=False):
+        """ Process message text """
 
         self.data_layer.check_exist_user(user)
 
-        if server.serve_id is not None:
-            if not self.data_layer.check_exist_user_group(user.user_id, server.serve_id):
+        if channel.serve_id is not None:
+            if not self.data_layer.check_exist_user_group(user.user_id, channel.serve_id):
                 logger.info("Novo usuário no grupo")
-                message = self.data_layer.welcome_message(user, server)
-                await self.bot.send_message(server.serve_id, message)
+                message = self.data_layer.welcome_message(user, channel)
+                await self.bot.send_message(channel.chat_id, message)
                 return
 
         if self.utils.check_name_bot(msg) or force:
-            await self.bot.send_action(server.serve_id)
+            await self.bot.send_action(channel.chat_id)
 
-            self.data_layer.server_active(server)
+            self.data_layer.server_active(channel)
 
             if self.data_layer.last_message(user, msg):
-                await self.bot.send_message(server.serve_id, "Pare de me mandar a mesma mensagem, eu não sou burra!")
+                await self.bot.send_message(channel.chat_id, "Pare de me mandar a mesma mensagem, eu não sou burra!")
                 return
 
             first_message = True
@@ -85,18 +89,18 @@ class Command:
                             file = open(action['path'], 'rb')
 
                         if 'private' in action:
-                            await self.bot.send_photo(user.user_id, file)
+                            await self.bot.send_photo(user.user_id, file, None, True)
                         else:
-                            await self.bot.send_photo(server.serve_id, file)
+                            await self.bot.send_photo(channel.chat_id, file)
 
                     elif 'file' in action:
-                        await self.bot.send_photo(server.serve_id, action['file'])
+                        await self.bot.send_photo(channel.chat_id, action['file'])
 
                 else:
                     if first_message:
-                        await self.bot.send_reply(server.serve_id, sentence, reply_id)
+                        await self.bot.send_reply(channel.chat_id, sentence, reply_id)
                         first_message = False
                     else:
-                        await self.bot.send_message(server.serve_id, sentence)
+                        await self.bot.send_message(channel.chat_id, sentence)
 
             return

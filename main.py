@@ -1,12 +1,11 @@
-
-
+import os
 from src.controller.telegram import TelegramBot
 from src.controller.discord import DiscordBot
 from src.brain import Brain
 from src.command import Command
 from src.data_layer import DataLayer
 from dotenv import load_dotenv
-import os
+
 load_dotenv()
 
 
@@ -17,6 +16,7 @@ class Application:
         self.commands = Command(self.data_layer, self.brain)
         self.use = os.getenv("USE")
         self.token = None
+        print(f"USE: {self.use}")
 
         if self.use == 'DISCORD':
             self.token = os.getenv("TOKEN_DISCORD")

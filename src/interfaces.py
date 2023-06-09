@@ -17,8 +17,15 @@ class IntegrationBot:
         """ Send reply message """
         pass
 
-    async def send_photo(self, chat_id, photo, message=None):
-        """ Send photo """
+    async def send_photo(self, chat_id, photo, message=None, private=False):
+        """
+        ### Send photo to DM or channel
+
+        :param chat_id: Channel ID or User ID
+        :param photo: Photo path
+        :param message: Message
+        :param private: Send to DM
+        """
         pass
 
     async def send_git(self, chat_id, gif, message=None):

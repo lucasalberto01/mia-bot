@@ -9,6 +9,13 @@ class IUser:
 
 
 @dataclass
-class IServer:
+class IChannel:
+    """
+    Chat: Container in chat typing message
+    Server: Set of Chat
+    """
+    chat_id: int | None
+    chat_name: str | None
     serve_id: int
     serve_nome: str
+    is_private: bool = False
