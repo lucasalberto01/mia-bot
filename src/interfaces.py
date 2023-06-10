@@ -51,6 +51,6 @@ class IntegrationBot:
         """
         pass
 
-    def run(self):
+    def run(self, token: str):
         """ Running bot """
         pass

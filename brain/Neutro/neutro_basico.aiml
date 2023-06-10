@@ -200,7 +200,7 @@
     </category>
 
     <category>
-        <pattern>TA TUDO BEM</pattern>
+        <pattern>ESTA TUDO BEM</pattern>
         <template>
             Ai que bom!#E ai, tem novidades?
         </template>
@@ -214,14 +214,7 @@
     </category>
 
     <category>
-        <pattern>* TUDO BEM * VOCE</pattern>
-        <template>
-            Ai que bom!#Cmg tbm ta tudo bem.
-        </template>
-    </category>
-
-    <category>
-        <pattern>TUDO * VOCE</pattern>
+        <pattern>TUDO * VC</pattern>
         <template>
             Ai que bom!#Cmg tbm ta tudo bem.
         </template>
@@ -418,7 +411,7 @@
     </category>
 
     <category>
-        <pattern>* VOCE CURTE</pattern>
+        <pattern>* VC CURTE</pattern>
         <template>
             De tudo um pouco...#Mas acho q sou ninfomaníaca.
         </template>
@@ -427,14 +420,14 @@
     <category>
         <pattern>* FAZENDO</pattern>
         <template>
-            To fanzendo nade bom.#E vc ?
+            To fazendo nade bom.#E vc ?
         </template>
     </category> 
 
     <category>
         <pattern>* EU TAMBEM</pattern>
         <template>
-            To fanzendo nade bom.#E vc ?
+            To fazendo nade bom.#E vc ?
         </template>
     </category>
 

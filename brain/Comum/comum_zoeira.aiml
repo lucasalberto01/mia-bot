@@ -60,12 +60,11 @@
     <category>
         <pattern>* GOSTA CARNE * FERRO</pattern>
         <template>
-        <random>
-        <li>Então pega no ferro do seu pai#Otario!</li>
-        <li>Gosto de homem de verdade, não</li>
-        <li>E dai, te perguntei algo?</li>
-        </random>
-
+            <random>
+                <li>Então pega no ferro do seu pai#Otario!</li>
+                <li>Gosto de homem de verdade, não</li>
+                <li>E dai, te perguntei algo?</li>
+            </random>
         </template>
     </category>
 
@@ -213,12 +212,12 @@
         </template>
     </category>
 
-    <category>
+    <!-- <category>
         <pattern>* FALA *</pattern>
         <template>
             Eu sou papagaio para repetir as coisas?#😂😂😂😂
         </template>
-    </category>
+    </category> -->
 
     <category>
         <pattern>* IRINEU *</pattern>
@@ -291,7 +290,7 @@
     </category>
 
     <category>
-        <pattern>* TA SAINDO *</pattern>
+        <pattern>* ESTA SAINDO *</pattern>
         <template>
             Ta sainda da jaula o monstro ? 😂
         </template>
@@ -406,6 +405,13 @@
         <pattern>* DO JEB </pattern>
         <template>
             Mó mememake gostozin
+        </template>
+    </category>
+
+    <category>
+        <pattern>* VERDADE</pattern>
+        <template>
+            Com certeza#É verdade esse bilete
         </template>
     </category>
 

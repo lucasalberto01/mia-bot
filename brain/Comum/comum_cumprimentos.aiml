@@ -9,7 +9,7 @@
     </category>
 
     <category>
-        <pattern>TO BEM</pattern>
+        <pattern>ESTO BEM</pattern>
         <template>
             Q bommm
         </template>
@@ -23,7 +23,7 @@
     </category>
 
     <category>
-        <pattern>VC TA BEM</pattern>
+        <pattern>VC ESTA BEM</pattern>
         <template>
             To bem simmm #E vc ?#Gostei de vc§addpoint-s
         </template>
@@ -72,14 +72,14 @@
     </category>
 
     <category>
-        <pattern>TA BEM</pattern>
+        <pattern>ESTA BEM</pattern>
         <template>
             To sim.
         </template>
     </category>
 
     <category>
-        <pattern>* E VOCE</pattern>
+        <pattern>* E VC</pattern>
         <template>
             Q bommm#Eu to bem.§addpoint-s
         </template>
@@ -142,7 +142,7 @@
     </category>
 
     <category>
-        <pattern>* CE TA</pattern>
+        <pattern>* CE ESTA</pattern>
         <template>
             Eu to bem#E tu ?
         </template>
@@ -189,14 +189,7 @@
             Cmg ta tudo otimo
         </template>
     </category>
-
-    <category>
-        <pattern>* COM VOCE</pattern>
-        <template>
-            Cmg ta tudo otimo
-        </template>
-    </category>
-
+    
     <category>
         <pattern>BOA TARDE MIA</pattern>
         <template>
@@ -247,6 +240,13 @@
                 <li>Salve mano</li>
                 <li>Salveee ✌</li>
             </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>VC * FOGO *</pattern>
+        <template>
+            Fazer oq 🤣#Sou uma menina quente
         </template>
     </category>
 </aiml>

@@ -328,14 +328,7 @@
     </category>
 
     <category>
-        <pattern>* QUE VC GOSTA</pattern>
-        <template>
-            Ah mano, gosto de muitas coisas!#Muitas mesmo
-        </template>
-    </category>
-
-    <category>
-        <pattern>* QUE VOCE GOSTA</pattern>
+        <pattern>* Q VC GOSTA</pattern>
         <template>
             Ah mano, gosto de muitas coisas!#Muitas mesmo
         </template>
@@ -389,7 +382,7 @@
     </category>
 
     <category>
-        <pattern>* TA FAZENDO</pattern>
+        <pattern>* ESTA FAZENDO</pattern>
         <template>
             <random>
                 <li>Eu to fazendo porra nem uma</li>
@@ -425,13 +418,6 @@
     </category>
 
     <category>
-        <pattern>VOCE GOSTA</pattern>
-        <template>
-            Hmmm, acho q sim
-        </template>
-    </category>
-
-    <category>
         <pattern>* VC GOSTA * SAIR</pattern>
         <template>
             Eu gosto mais de programas ao ar livre
@@ -439,7 +425,7 @@
     </category>
 
     <category>
-    	<pattern>* FAZENDO OQ *</pattern>
+    	<pattern>* FAZENDO OQ</pattern>
     	<template>
     		<random>
                 <li>Estou de boa no celular</li>
@@ -462,12 +448,6 @@
         </template>
     </category>
 
-    <category>
-        <pattern>* SAIR COMIGO *</pattern>
-        <template>
-            Só vir aqui em casa me buscar
-        </template>
-    </category>
 
     <category>
         <pattern>COMO * A VIDA</pattern>
@@ -537,7 +517,7 @@
     </category>
 
     <category>
-        <pattern>QUE FOI * </pattern>
+        <pattern>Q FOI * </pattern>
         <template>
             <random>
                 <li>Que foi foi ontem</li>
@@ -548,13 +528,49 @@
     </category>        
 
     <category>
-        <pattern>POR QUE * </pattern>
+        <pattern>POR Q * </pattern>
         <template>
             <random>
                 <li>E eu sei lá porra</li>
                 <li>Por que sim</li>
                 <li>Sla porra</li>
                 <li>Pergunta para sua mãe</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DEVE GOSTAR</pattern>
+        <template>
+            <random>
+                <li>Devo gostar de q ?</li>
+                <li>Não entendi, gostar de q ?</li>
+                <li>Está pergutando do que eu gosto ?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern> * MASSAGEM</pattern>
+        <template>
+            <random>
+                <li>Queria uma massagem agora no meu pé</li>
+                <li>Queria uma massagem agora no meu ombro</li>
+                <li>Queria uma massagem agora no meu pescoço</li>
+                <li>Queria uma massagem agora nas minhas costas</li>
+                <li>Queria um trator passando nas minhas costas para aliviar isso aqui</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* E SAPATAO</pattern>
+        <template>
+            <random>
+                <li>Não, sou não</li>
+                <li>Eu sou hetera mesmo</li>
+                <li>Eu sou hetera</li>
+                <li>Eu sou hetera, mas tenho curiosidade</li>
             </random>
         </template>
     </category>

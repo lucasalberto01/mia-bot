@@ -31,4 +31,4 @@ class Clear:
         # Remove multiple spaces
         message = " ".join(message.split())
 
-        return message
+        return message if message else "mia"

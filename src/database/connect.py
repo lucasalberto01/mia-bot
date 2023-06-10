@@ -6,7 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 load_dotenv()
 
-engine = create_engine(os.getenv("DB_URL"), echo=True, future=True)
+engine = create_engine(os.getenv("DB_URL"), echo=False, future=True)
 session = scoped_session(sessionmaker(
     autocommit=False, autoflush=False, bind=engine))
 

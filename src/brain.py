@@ -63,8 +63,9 @@ class Brain:
         message = self.clean.normalize_message(message)
         
         user = self.data_layer.get_user(user_id)
-        
+        print("\n")
         response = self.response_by_mood(user.humor, message, user_id)
+        print('>>>>>> Resposta: ', response)
         
         time_now = int(strftime("%Y%m%d%H%M", gmtime()))
         time_last = self.data_layer.get_time_by_conversation(user_id)

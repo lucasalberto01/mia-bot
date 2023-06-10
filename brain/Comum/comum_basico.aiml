@@ -14,7 +14,7 @@
     </category>
 
     <category>
-        <pattern>TA</pattern>
+        <pattern>ESTA</pattern>
         <template>
             <random>
             <li>Ok</li>

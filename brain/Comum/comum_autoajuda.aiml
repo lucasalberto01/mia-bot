@@ -16,4 +16,31 @@
         </template>
     </category>
 
+    <category>
+        <pattern>* CARENTE</pattern>
+        <template>
+            Poxa vida#:/#Vai fala com ela!!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SOZINHO</pattern>
+        <template>
+            Poxa vida#Por que não chama alguem para morar com vc ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SUBINDO NAS PAREDES</pattern>
+        <template>
+            Vai bater uma punheta#Vai que passa
+        </template>
+    </category>
+
+    <category>
+        <pattern> * ESTOU TRISTE</pattern>
+        <template>
+            Poxa vida 😔#O que aconteceu?
+        </template>
+    </category>
 </aiml>

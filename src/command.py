@@ -51,10 +51,17 @@ class Command:
         self.brain.load_brain()
         return "Brain Reloaded!"
 
+    def all_group(self,):
+        return self.data_layer.get_all_groups()
+
+    def update_name_group(self, group_id: int, name: str):
+        return self.data_layer.update_name_group(group_id, name)
+
     ## ALL TEXTO MESSAGE ##
 
     async def thinking(self, msg: str, user: IUser, reply_id: int, channel: IChannel, force=False):
         """ Process message text """
+        print("> Mensagem recebida: ", msg)
 
         self.data_layer.check_exist_user(user)
 

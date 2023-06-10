@@ -128,6 +128,17 @@
         </template>
     </category>
 
+    <category>
+        <pattern>* TESAO</pattern>
+        <template>
+            Ohh, pera lá, calma aí#Aquieta o cu
+        </template>
+    </category>
 
-
+    <category>
+        <pattern>* FICANDO DURO</pattern>
+        <template>
+            Pera lá, oh, oq está ficando duro?#Tomara que seja o sorvete na geladeira
+        </template>
+    </category>
 </aiml>

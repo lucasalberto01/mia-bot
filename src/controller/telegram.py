@@ -7,9 +7,7 @@ from src.interfaces import IntegrationBot
 from src.command import Command
 from src.utils.typings import IUser, IChannel
 
-
 load_dotenv()
-
 
 class TelegramBot(IntegrationBot):
     """ Telegram Bot """
@@ -18,8 +16,9 @@ class TelegramBot(IntegrationBot):
         self.token = os.getenv("TOKEN_TELEGRAM")
         self.commands = commands
         self.application = None
+        self.sudo_user: list[int] = list(map(int, os.getenv("SUDO_USER").split(',')))
 
-    ### COMMANDS ###
+    ### PUBLIC COMMANDS ###
     async def start(self, update: Update, context: ContextTypes):
         message = self.commands.start()
         await update.message.reply_text(message)
@@ -54,10 +53,65 @@ class TelegramBot(IntegrationBot):
         response = self.commands.history(user)
         await update.message.reply_text(response)
 
+    
+    ### SUDO COMMANDS ###
     async def gif(self, update: Update, context: ContextTypes):
+        if update.message.from_user.id not in self.sudo_user:
+            return
+        
         file = open('assets/gif/1.gif', 'rb')
         await update.message.reply_animation(file)
+    
+    async def check(self, update: Update, context: ContextTypes):
+        if update.message.from_user.id not in self.sudo_user:
+            return
+        
+        li = []
+        lo = ["Verificando Nome dos Grupos"]
+        i = 0
+        o = 0
+        
+        all_group = self.commands.all_group()
+        
+        for group in all_group:
+            try:
+                group_id = group.id_grupo
+                chat = await self.application.bot.get_chat(group_id)
+                name_group = chat.title
+                user_group = chat.username
+                await chat.send_message("Oiii, volte! 🚀")
+                li.append([group_id, name_group, user_group])
+                lo.append('👥 {} - {} - @{}'.format(i, name_group, user_group))
+                print('👥 {} - {} - @{}'.format(i, name_group, user_group))
+            except Exception:
+                lo.append('❌ {} - {} - @{}'.format(i, name_group, user_group))
+            
+            o += 1
+            i += 1
+            
+            if o == 51:
+                msg = '\n'.join(lo)
+                await self.application.bot.send_message(chat_id=update.message.chat_id, text=msg)
+                lo.clear()
+                lo.append("Verificando Nome dos Grupos")
+                o = 1
+            
+        for group in li:
+            print("Updating group: {}".format(group[1]))
+            self.commands.update_name_group(group[0], group[1])
+            
+        msg = '\n'.join(lo)
+        await self.application.bot.send_message(chat_id=update.message.chat_id, text=msg)
+        await self.application.bot.send_message(chat_id=update.message.chat_id, text="Atualização finalizada")
+                
+    async def reload(self, update: Update, context: ContextTypes):
+        if update.message.from_user.id not in self.sudo_user:
+            return
+        self.commands.reload()
+        await update.message.reply_text("Reloaded")
 
+    
+    ### CONVERSATION ###
     async def thinking(self, update: Update, context: ContextTypes):
         bot = context.bot
         message = update.message
@@ -85,7 +139,7 @@ class TelegramBot(IntegrationBot):
         server = IChannel(serve_id, serve_nome, serve_id, serve_nome)
 
         await self.commands.thinking(message.text, user, reply_id, server, is_reply_of_me or is_private)
-
+        
     ### INTEGRATION BOT ###
     async def send_message(self, chat_id, message):
         await self.application.bot.send_message(chat_id=chat_id, text=message)
@@ -93,7 +147,7 @@ class TelegramBot(IntegrationBot):
     async def send_reply(self, chat_id, message, reply_message_id):
         await self.application.bot.send_message(chat_id=chat_id, text=message, reply_to_message_id=reply_message_id)
 
-    async def send_photo(self, chat_id, photo, message=None):
+    async def send_photo(self, chat_id, photo, message=None, private=False):
         await self.application.bot.send_photo(chat_id=chat_id, photo=photo, caption=message)
 
     async def send_git(self, chat_id, gif, message=None):
@@ -109,6 +163,8 @@ class TelegramBot(IntegrationBot):
         self.application.add_handler(CommandHandler("history", self.history))
         self.application.add_handler(CommandHandler("gif", self.gif))
         self.application.add_handler(CommandHandler("info", self.info))
+        self.application.add_handler(CommandHandler("check", self.check))
+        self.application.add_handler(CommandHandler("reload", self.reload))
         self.application.add_handler(MessageHandler(
             filters.TEXT & ~filters.COMMAND, self.thinking))
         self.application.run_polling()

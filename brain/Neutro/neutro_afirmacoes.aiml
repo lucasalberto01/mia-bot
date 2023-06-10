@@ -15,7 +15,7 @@
     </category>
 
     <category>
-        <pattern>VAMO</pattern>
+        <pattern>VAMOS</pattern>
         <template>
             Não to afim XD
         </template>
@@ -55,18 +55,18 @@
             Mas eu nem te conheço direito#Temos q se conhecer melhor
         </template>
     </category>
-
-    <category>
-        <pattern>* CASA COMIGO</pattern>
-        <template>
-            Mas eu nem te conheço direito#Temos q se conhecer melhor
-        </template>
-    </category>
-
+    
     <category>
         <pattern>* TETAS * MANDA FOTO</pattern>
         <template>
             kkk Mano, Mal te conheço#Não vou mandar foto da teta
+        </template>
+    </category>
+
+    <category>
+        <pattern> * MANDA FOTO</pattern>
+        <template>
+            Não quero mandar foto nenhuma 🙄#Sossega 
         </template>
     </category>
 
@@ -91,6 +91,17 @@
            <li>kkkk Ta carente amigo?</li>
            <li>Q amorzinho ♥️</li>
            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern> * PIRIQUETE</pattern>
+        <template>
+            <random>
+                <li>Oi ?#Está falando das suas amigas?</li>
+                <li>Está falando das colegas de trabalho da sua mãe?</li>
+                <li>Oi ?#Ahh, as colegas de trabalho da sua mãe</li>
+            </random>
         </template>
     </category>
 

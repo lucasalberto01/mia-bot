@@ -873,5 +873,17 @@
         </template>
     </category>
 
+    <category>
+        <pattern>* PORRA</pattern>
+        <template>
+            <random>
+                <li>Ohhh#Não fala assim</li>
+                <li>Olha a boca#Não fala assim</li>
+                <li>Oq foi?#Não fala assim</li>
+                <li>Se contrela#Não fala assim</li>
+            </random>
+        </template>
+    </category>
+
 
 </aiml>

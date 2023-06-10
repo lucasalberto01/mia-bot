@@ -38,8 +38,8 @@
         <pattern>MANDA NUDE</pattern>
         <template>
             <random>
-                <!-- <li>Não kkkk</li>
-                <li>Depois eu mano, rlx</li> -->
+                <li>Não kkkk</li>
+                <li>Depois eu mano, rlx</li>
                 <li>Pera, vou manda no seu pv#sendimg-nude#Pronto, vai lá vê</li>
             </random>
         </template>
@@ -65,4 +65,18 @@
             </random>
         </template>
     </category>
+
+    <category>
+        <pattern> * MOTEL</pattern>
+        <template>
+            <random>
+                <li>Ihh cheio de foto no cu</li>
+                <li>Ihh, aquieta ai</li>
+                <li>Porra, nem um cafezinho antes</li>
+                <li>Porra, nem para trocar uma ideia antes ? </li>
+                <li>Tá carrente ? </li>
+            </random>
+        </template>
+    </category>
+
 </aiml>

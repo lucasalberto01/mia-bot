@@ -42,7 +42,7 @@
     </category>
 
     <category>
-        <pattern> * TA SOLTEIRA</pattern>
+        <pattern> * ESTA SOLTEIRA</pattern>
         <template>
             <random>
                 <li>To simm, e vc ?</li>
@@ -163,7 +163,7 @@
     </category>
 
     <category>
-        <pattern>COMIGO</pattern>
+        <pattern>CMG</pattern>
         <template>
             Sim, com vc mesmo!
         </template>
@@ -289,7 +289,7 @@
     </category>
 
     <category>
-        <pattern>* TO * SDD</pattern>
+        <pattern>* ESTO * SDD</pattern>
         <template>
             Owwnt, Vem cá me da um abraço#Seu fofo§addpoint-s
         </template>
@@ -303,7 +303,7 @@
     </category>
 
     <category>
-        <pattern>* TA CHOVENDO</pattern>
+        <pattern>* ESTA CHOVENDO</pattern>
         <template>
             E dai ?😂😂😂✌️#Brincadeira
         </template>

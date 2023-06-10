@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from time import gmtime, strftime
+from sqlalchemy import update
 from src.database.connect import session
 from src.database.model.Conversation import Conversation
 from src.database.model.History import History
@@ -59,6 +60,8 @@ class DataLayer:
             pontos=user.pontos,
             tempo=time_now
         )
+
+        update(Conversation).where(Conversation.id == id).values(tempo=time_now)
         session.add(new_history)
         session.commit()
         return
@@ -78,7 +81,6 @@ class DataLayer:
 
         exist = self.session.query(User).filter_by(id=id).first()
         if exist:
-            print('Ja ta no banco de dados geral')
             return False
 
         print('Nao ta no banco de dados geral')
@@ -279,8 +281,8 @@ class DataLayer:
         :param user: user
         :return: points and mood of user
         """
-        user = session.query(User).filter_by(id=user.user_id).first()
-        return user.pontos, user.humor
+        user_status = session.query(User).filter_by(id=user.user_id).first()
+        return user_status.pontos, user_status.humor
 
     def get_history(self, user: IUser) -> list[History]:
         """
@@ -289,5 +291,15 @@ class DataLayer:
         :param user: user
         :return: history of user
         """
-        user = session.query(History).filter_by(user_id=user.user_id).all()
-        return user
+        user_history = session.query(History).filter_by(user_id=user.user_id).all()
+        return user_history
+
+    def get_all_groups(self) -> list[tuple[int, str]]:
+        all_groups = session.query(
+            UserGroup.id_grupo.distinct().label("id_grupo"),
+            UserGroup.nome_grupo
+        ).all()
+        return all_groups
+
+    def update_name_group(self, group_id: int, name: str):
+        update(UserGroup).where(UserGroup.id_grupo == group_id).values(nome_grupo=name)

@@ -436,4 +436,18 @@
         </template>
     </category>
 
+    <category>
+        <pattern> * XERECA *</pattern>
+        <template>
+            VSFD#Não fala assim cmg não§removepoint-s
+        </template>
+    </category>
+
+    <category>
+        <pattern> * RABETAO * </pattern>
+        <template>
+            VSFD#Não fala assim cmg não§removepoint-s
+        </template>
+    </category>
+
 </aiml>

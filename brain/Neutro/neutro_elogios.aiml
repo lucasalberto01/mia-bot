@@ -1,11 +1,4 @@
 <aiml version="1.0.1" encoding="UTF-8">
-	<category>
-        <pattern>VC * FOFA</pattern>
-        <template>
-            Obg 🤣§addpoint
-        </template>
-    </category>
-
     <category>
         <pattern>FOFA</pattern>
         <template>
@@ -16,6 +9,21 @@
             </random>
         </template>
     </category>
+
+	<category>
+        <pattern>VC * FOFA</pattern>
+        <template>
+            Obg 🤣§addpoint
+        </template>
+    </category>
+
+    <category>
+        <pattern>E FOFA</pattern>
+        <template>
+            Obg 🤣#<srai>FOFA</srai>
+        </template>
+    </category>
+
 
     <category>
         <pattern>* GOSTOSA</pattern>
