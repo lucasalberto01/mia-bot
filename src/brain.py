@@ -71,30 +71,24 @@ class Brain:
         time_last = self.data_layer.get_time_by_conversation(user_id)
 
         final = ''
-        pontos = user.pontos
         events = response.split('§')
 
         for event in events:
             if time_now > time_last:
                 if event == 'addpoint':
-                    pontos2 = pontos + 1
-                    print('adicionar um ponto')
                     final = '#Ganhou um pontinho cmg 😝'
-                    self.data_layer.set_point(message, user_id, pontos2, '➕')
+                    self.data_layer.set_point(message, user_id, 1, '➕')
                     
                 elif event == 'addpoint-s':
-                    pontos2 = pontos + 1
-                    self.data_layer.set_point(message, user_id, pontos2, '➕')
+                    self.data_layer.set_point(message, user_id, 1, '➕')
 
                 elif event == 'removepoint':
-                    pontos2 = pontos - 1
-                    print('remover um ponto')
                     final = '#Perdeu um ponto cmg 😥'
-                    self.data_layer.set_point(message, user_id, pontos2, '➖')
+                    self.data_layer.set_point(message, user_id, -1, '➖')
 
                 elif event == 'removepoint-s':
-                    pontos2 = pontos - 1
-                    print('remover um ponto')
-                    self.data_layer.set_point(message, user_id, pontos2, '➖')
+                    self.data_layer.set_point(message, user_id, -1, '➖')
+                    
+        self.data_layer.update_mood(user_id)
 
         return events[0] + final

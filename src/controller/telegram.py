@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters
-
+import concurrent.futures
 from src.interfaces import IntegrationBot
 from src.command import Command
 from src.utils.typings import IUser, IChannel
@@ -62,47 +62,57 @@ class TelegramBot(IntegrationBot):
         file = open('assets/gif/1.gif', 'rb')
         await update.message.reply_animation(file)
     
+    async def check_group(self, group):
+        try:
+            group_id = group.id_grupo
+            chat = await self.application.bot.get_chat(group_id)
+            name_group = chat.title
+            user_group = chat.username
+            # await chat.send_message("Oiii, volte! 🚀")
+            return [group_id, name_group, user_group]
+        except Exception:
+            return None
+    
     async def check(self, update: Update, context: ContextTypes):
         if update.message.from_user.id not in self.sudo_user:
             return
-        
+
+        all_group = self.commands.all_group()
         li = []
         lo = ["Verificando Nome dos Grupos"]
         i = 0
         o = 0
-        
-        all_group = self.commands.all_group()
-        
-        for group in all_group:
-            try:
-                group_id = group.id_grupo
-                chat = await self.application.bot.get_chat(group_id)
-                name_group = chat.title
-                user_group = chat.username
-                await chat.send_message("Oiii, volte! 🚀")
-                li.append([group_id, name_group, user_group])
-                lo.append('👥 {} - {} - @{}'.format(i, name_group, user_group))
-                print('👥 {} - {} - @{}'.format(i, name_group, user_group))
-            except Exception:
-                lo.append('❌ {} - {} - @{}'.format(i, name_group, user_group))
-            
-            o += 1
-            i += 1
-            
-            if o == 51:
-                msg = '\n'.join(lo)
-                await self.application.bot.send_message(chat_id=update.message.chat_id, text=msg)
-                lo.clear()
-                lo.append("Verificando Nome dos Grupos")
-                o = 1
-            
+
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            futures = [executor.submit(self.check_group, group) for group in all_group]
+
+            for future in concurrent.futures.as_completed(futures):
+                result = await future.result()
+                if result:
+                    li.append(result)
+                    lo.append('👥 {} - {} - @{}'.format(i, result[1], result[2]))
+                    print('👥 {} - {} - @{}'.format(i, result[1], result[2]))
+                else:
+                    lo.append('❌ {} - {} - @{}'.format(i, result[1], result[2]))
+
+                o += 1
+                i += 1
+
+                if o == 51:
+                    msg = '\n'.join(lo)
+                    await self.application.bot.send_message(chat_id=update.message.chat_id, text=msg)
+                    lo.clear()
+                    lo.append("Verificando Nome dos Grupos")
+                    o = 1
+
         for group in li:
             print("Updating group: {}".format(group[1]))
             self.commands.update_name_group(group[0], group[1])
-            
+
         msg = '\n'.join(lo)
         await self.application.bot.send_message(chat_id=update.message.chat_id, text=msg)
         await self.application.bot.send_message(chat_id=update.message.chat_id, text="Atualização finalizada")
+
                 
     async def reload(self, update: Update, context: ContextTypes):
         if update.message.from_user.id not in self.sudo_user:
