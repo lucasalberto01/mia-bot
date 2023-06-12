@@ -1,6 +1,6 @@
 import os
-from src.controller.telegram import TelegramBot
-from src.controller.discord import DiscordBot
+from src.adapters.telegram import TelegramBot
+from src.adapters.discord import DiscordBot
 from src.brain import Brain
 from src.command import Command
 from src.data_layer import DataLayer
