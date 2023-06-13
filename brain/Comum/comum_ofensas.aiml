@@ -191,6 +191,13 @@
         </template>
     </category>
 
+    <category>
+        <pattern>VC * BURRA *</pattern>
+        <template>
+            Sua mãe!#<srai>SUA MAE BURRA</srai>§removepoint-s
+        </template>
+    </category>
+
 
 
     <category>

@@ -575,6 +575,28 @@
         </template>
     </category>
 
+    <category>
+        <pattern> * ARDUINO</pattern>
+        <template>
+            <random>
+              
+                <li>Arduino?#Aquela plataforma de nerds que ficam fazendo led pisca pisca</li>
+                <li>Arduino?#Aquela plataforma de nerds que ficam fazendo led pisca pisca#Mas eu amo</li>
+                <li>Arduino?#Quer dizer que você é um nerd?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>VC * UM ROBO</pattern>
+        <template>
+            <random>
+                <li>Um robo ?#Não, sou não 😠</li>
+                <li>Um robo ?#Um robo faz isso aqui?sendimg-sexy#Tmnc 🙄</li>
+            </random>
+        </template>
+    </category>
+
     <!-- #################### PERGUNTAS COM CONTEXTO -->
 
      <category>
